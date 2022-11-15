@@ -1,0 +1,75 @@
+.navbar-main {
+  background-color: #0957de;
+}
+
+.beranda {
+  background: url(../assets/images/background.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.judul {
+  padding: 100px;
+  color: #0957de;
+  font-family: "Yeseva One", cursive;
+}
+
+.tombol {
+  border: none;
+  border-radius: 50px;
+  background-color: #4caf50;
+  color: white;
+  width: 120px;
+}
+
+.tombol:hover {
+  background-color: bisque;
+  color: blue;
+}
+
+.tombol-submit {
+  width: 100%;
+  background-color: #0957de;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  height: 78px;
+}
+
+.logo {
+  padding: 20px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.tentang {
+  color: #1f2b6c;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400px;
+}
+
+.tentangKami {
+  height: 100vh;
+}
+
+.logoRs {
+  width: 500px;
+  height: 500px;
+}
+
+.fasilitas {
+  height: 100vh;
+}
+
+.dokter {
+  height: 100vh;
+}
+
+.isi-kartu {
+  background-color: #bfd2f8;
+}
+/* .navbar-list {
+  color: white;
+  text-decoration: none;
+  padding-right: 10px;
+} */
