@@ -12,7 +12,7 @@ const TentangKami = () => {
           </Container>
         </Card.ImgOverlay>
       </Card>
-      <Container>
+      <Container className="mt-5 mb-5">
         <Row>
           <Col>
             <img src={logoRs} alt="logo" className="logoRs" />

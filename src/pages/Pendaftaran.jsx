@@ -25,7 +25,10 @@ const Pendaftaran = () => {
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                   <Form.Label>No Hp</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" />
+                  <Form.Control
+                    type="email"
+                    placeholder="Masukan no.hp anda..."
+                  />
                 </Form.Group>
 
                 <Form.Group className="mb-3">
@@ -76,7 +79,7 @@ const Pendaftaran = () => {
                   *Pastikan data sudah terisi dengan benar
                 </Form.Text>
               </Form.Group>
-              <button variant="primary" type="submit" className="tombol-submit">
+              <button type="submit" className="tombol-submit">
                 KONFIRMASI
               </button>
             </Col>

@@ -1,6 +1,6 @@
 import { Container, Nav, Navbar, Row, Col, Stack } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import Logo from "../assets/images/logo.png";
+import Logo from "../assets/images/logo-simarsa.png";
 import Telp from "../assets/images/telp.png";
 import Jam from "../assets/images/jam.png";
 import Lokasi from "../assets/images/lokasi.png";
@@ -11,9 +11,9 @@ const Navigasi = () => {
       <section className="container logo">
         <Row>
           <Col xs={4}>
-            <img src={Logo} alt="" />
+            <img src={Logo} width="250px" alt="" />
           </Col>
-          <Col xs={8}>
+          <Col xs={8} className="mt-3">
             <Stack direction="horizontal" gap="3">
               <img src={Telp} alt="" />
               GAWAT DARURAT (0281) 635423
@@ -28,7 +28,7 @@ const Navigasi = () => {
       <Navbar className="navbar-main" variant="dark" expand="lg">
         <Container>
           <NavLink to="/" className="navbar-brand">
-            RS BUNDA PWT
+            SIMARSA
           </NavLink>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -40,7 +40,7 @@ const Navigasi = () => {
                 Tentang Kami
               </NavLink>
               <NavLink className="nav-link" to="/fasilitas">
-                Fasilitas & Pelayanan
+                Layanan
               </NavLink>
               <NavLink className="nav-link" to="/jadwaldokter">
                 Jadwal Dokter

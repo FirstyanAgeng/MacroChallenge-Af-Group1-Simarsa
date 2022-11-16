@@ -6,6 +6,21 @@
   background: url(../assets/images/background.jpg);
   background-size: cover;
   height: 100vh;
+  width: 100%;
+}
+
+.content-beranda {
+  height: 50vh;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 5rem;
+  font-family: "Yeseva One", cursive;
+}
+
+.content-beranda h1 {
+  color: #0957de;
 }
 
 .judul {
@@ -68,6 +83,7 @@
 .isi-kartu {
   background-color: #bfd2f8;
 }
+
 /* .navbar-list {
   color: white;
   text-decoration: none;
