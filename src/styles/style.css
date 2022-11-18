@@ -1,3 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap");
+:root {
+  --primary-color: #0957de;
+  --secondary-color: #ecf5f8;
+  --tertiary-color: #bfd2f8;
+  --txt-primary-color: #159eec;
+  --txt-secondary-color: #1f2b6c;
+}
+
+.navbar-logo {
+  padding: 15px;
+  font-family: "Work Sans", sans-serif;
+}
+
 .navbar-main {
   background-color: #0957de;
 }
@@ -9,7 +25,7 @@
   width: 100%;
 }
 
-.content-beranda {
+.beranda-content {
   height: 50vh;
   width: 100%;
   justify-content: center;
@@ -17,16 +33,53 @@
   align-items: center;
   margin-top: 5rem;
   font-family: "Yeseva One", cursive;
+  background-color: var(--secondary-color);
+  margin-bottom: 30px;
 }
 
-.content-beranda h1 {
-  color: #0957de;
+h1 {
+  color: var(--primary-color);
+  font-family: "Yeseva One", cursive;
+  font-size: 48px;
+}
+
+h2 {
+  color: var(--primary-color);
+  font-family: "Yeseva One", cursive;
+  font-size: 32px;
+}
+
+h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--txt-primary-color);
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+}
+
+.beranda-layanan {
+  background-color: var(--secondary-color);
+}
+
+.beranda-jadwal {
+  background-color: var(--secondary-color);
+  margin-bottom: 30px;
 }
 
 .judul {
-  padding: 100px;
-  color: #0957de;
+  padding-top: 250px;
+  color: var(--primary-color);
   font-family: "Yeseva One", cursive;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.deskripsi {
+  font-family: "Work Sans", sans-serif;
 }
 
 .tombol {
@@ -38,23 +91,19 @@
 }
 
 .tombol:hover {
-  background-color: bisque;
-  color: blue;
+  background-color: white;
+  color: #4caf50;
+  transition: 0.3s ease;
 }
 
 .tombol-submit {
   width: 100%;
-  background-color: #0957de;
+  background-color: var(--primary-color);
   color: white;
   border: none;
   padding: 10px;
   border-radius: 5px;
   height: 78px;
-}
-
-.logo {
-  padding: 20px;
-  font-family: "Work Sans", sans-serif;
 }
 
 .tentang {
@@ -63,13 +112,17 @@
   font-weight: 400px;
 }
 
+.tentang-content {
+  background-color: var(--secondary-color);
+}
 .tentangKami {
   height: 100vh;
+  margin-bottom: 10rem;
 }
 
 .logoRs {
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
 }
 
 .fasilitas {
@@ -77,11 +130,39 @@
 }
 
 .dokter {
-  height: 100vh;
+  height: 200vh;
+  background-color: var(--secondary-color);
 }
 
 .isi-kartu {
   background-color: #bfd2f8;
+}
+
+.kartu-layanan {
+  background-color: #ecf5f8;
+}
+
+footer {
+  background-color: #0957de;
+  color: #fcfefe;
+  font-family: "Work Sans", sans-serif;
+}
+
+footer h1 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.list {
+  color: #159eec;
+}
+
+footer p {
+  font-size: medium;
+}
+
+.hubungi {
+  height: 200vh;
 }
 
 /* .navbar-list {

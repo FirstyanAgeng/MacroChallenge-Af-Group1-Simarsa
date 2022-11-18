@@ -2,6 +2,7 @@ const HOME = "/";
 const ABOUT = "/tentangkami";
 const DOKTER = "/jadwaldokter";
 const DAFTAR = "/pendaftaran";
-const FASILITAS = "/fasilitas";
+const LAYANAN = "/fasilitas";
+const HUBUNGI = "/hubungikami";
 
-export { HOME, ABOUT, DAFTAR, DOKTER, FASILITAS };
+export { HOME, ABOUT, DAFTAR, DOKTER, LAYANAN, HUBUNGI };

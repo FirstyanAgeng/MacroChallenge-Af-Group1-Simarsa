@@ -1,23 +1,82 @@
 import React from "react";
-
+import picFas from "../assets/images/picFas.png";
+import Dok from "../assets/images/dok1.png";
+import { Row, Col, Container, Card, Stack } from "react-bootstrap";
 const Beranda = () => {
   return (
     <>
       <div className="beranda">
-        <h1 className="judul">
+        <h1 className="ms-5 judul">
           Selamat Datang Di Website Resmi <br />
           Rumah Sakit Bunda Purwokerto
         </h1>
       </div>
-      <div className="content-beranda container">
-        <h1>Sejarah Rumah Sakit Bunda</h1>
-        <p>
-          Rumah Sakit Bunda Purwokerto merupakan Rumah sakit swasta di bawah
-          naungan Yayasan Bunda Purwokerto. Di bangun sejak 09 Agustus 1989 dan
-          beroperasi sebagai Rumah Bersalin pada 14 juni 1990 yang diresmikan
-          oleh Bapak Kepala Kandep Kesehatan Banyumas (Bapak dr. Koentoro)
-        </p>
-        <a href="">Baca Selengkapnya</a>
+      <div className="beranda-content">
+        <Container>
+          <h2 className="pt-5">Sejarah Rumah Sakit Bunda</h2>
+          <p>
+            Rumah Sakit Bunda Purwokerto merupakan Rumah sakit swasta di bawah
+            naungan Yayasan Bunda Purwokerto. Di bangun sejak 09 Agustus 1989
+            dan beroperasi sebagai Rumah Bersalin pada 14 juni 1990 yang
+            diresmikan oleh Bapak Kepala Kandep Kesehatan Banyumas (Bapak dr.
+            Koentoro)
+          </p>
+          <p>
+            <a href="/tentang">Baca Selengkapnya</a>
+          </p>
+        </Container>
+      </div>
+      <div className="beranda-layanan container my-5 h-50">
+        <h2 className="text-center p-2">Layanan</h2>
+        <Container>
+          <Row className="container">
+            <Col>
+              <h3>Layanan Unggulan Kandungan</h3>
+              <p>USG Obsetri Ginekologi</p>
+              <p>USG Skrining Kelainan Kongenital Janin dan Detail Jantung</p>
+              <p>USG 4 Dimensi HD Live Studio</p>
+              <p>Penanganan Kehamilan Resiko Tinggi</p>
+              <p>
+                <a href="/layanan">Baca Selengkapnya</a>
+              </p>
+            </Col>
+            <Col>
+              <img src={picFas} width="400px" height="220px" />
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <div className="beranda-jadwal">
+        <Container>
+          <h2 className="pt-5 text-center">Jadwal Dokter</h2>
+          <Row className="justify-content-center">
+            <Col>
+              <Stack direction="horizontal" gap="5">
+                <Card style={{ width: "15rem" }} className="isi-kartu">
+                  <Card.Img variant="top" src={Dok} />
+                  <Card.Body>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Card.Link href="#">Card Link</Card.Link>
+                  </Card.Body>
+                </Card>
+
+                <Card style={{ width: "15rem" }} className="isi-kartu">
+                  <Card.Img variant="top" src={Dok} />
+                  <Card.Body>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Card.Link href="#">Card Link</Card.Link>
+                  </Card.Body>
+                </Card>
+              </Stack>
+            </Col>
+          </Row>
+        </Container>
       </div>
     </>
   );

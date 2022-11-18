@@ -5,16 +5,20 @@ import Dok from "../assets/images/dok1.png";
 const JadwalDokter = () => {
   return (
     <>
-      <section className="dokter">
+      <div className="dokter">
         <Card className="text-dark">
           <Card.Img src={deskDok} alt="Card image" />
-          <Card.ImgOverlay></Card.ImgOverlay>
+          <Card.ImgOverlay>
+            <Container>
+              <h1>Jadwal Dokter</h1>
+            </Container>
+          </Card.ImgOverlay>
         </Card>
-        <div className="p-5">
+        <div className="p-5 dokter-content">
           <Container>
             <Row>
               <Col>
-                <Card style={{ width: "18rem" }} className="isi-kartu">
+                <Card style={{ width: "17rem" }} className="isi-kartu">
                   <Card.Img variant="top" src={Dok} />
                   <Card.Body>
                     <Card.Text>
@@ -26,7 +30,7 @@ const JadwalDokter = () => {
                 </Card>
               </Col>
               <Col>
-                <Card style={{ width: "18rem" }} className="isi-kartu">
+                <Card style={{ width: "17rem" }} className="isi-kartu">
                   <Card.Img variant="top" src={Dok} />
                   <Card.Body>
                     <Card.Text>
@@ -38,7 +42,7 @@ const JadwalDokter = () => {
                 </Card>
               </Col>
               <Col>
-                <Card style={{ width: "18rem" }} className="isi-kartu">
+                <Card style={{ width: "17rem" }} className="isi-kartu">
                   <Card.Img variant="top" src={Dok} />
                   <Card.Body>
                     <Card.Text className="isi-kartu">
@@ -51,7 +55,7 @@ const JadwalDokter = () => {
               </Col>
 
               <Col>
-                <Card style={{ width: "18rem" }} className="isi-kartu">
+                <Card style={{ width: "17rem" }} className="isi-kartu">
                   <Card.Img variant="top" src={Dok} />
                   <Card.Body>
                     <Card.Text className="isi-kartu">
@@ -63,7 +67,7 @@ const JadwalDokter = () => {
                 </Card>
               </Col>
               <Col>
-                <Card style={{ width: "18rem" }} className="isi-kartu">
+                <Card style={{ width: "17rem" }} className="isi-kartu">
                   <Card.Img variant="top" src={Dok} />
                   <Card.Body>
                     <Card.Text className="desk-card">
@@ -75,7 +79,7 @@ const JadwalDokter = () => {
                 </Card>
               </Col>
               <Col>
-                <Card style={{ width: "18rem" }} className="isi-kartu">
+                <Card style={{ width: "17rem" }} className="isi-kartu">
                   <Card.Img variant="top" src={Dok} />
                   <Card.Body>
                     <Card.Text className="desk-card">
@@ -89,7 +93,7 @@ const JadwalDokter = () => {
             </Row>
           </Container>
         </div>
-      </section>
+      </div>
     </>
   );
 };

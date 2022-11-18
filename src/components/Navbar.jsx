@@ -8,10 +8,10 @@ import Lokasi from "../assets/images/lokasi.png";
 const Navigasi = () => {
   return (
     <>
-      <section className="container logo">
+      <section className="container navbar-logo">
         <Row>
           <Col xs={4}>
-            <img src={Logo} width="250px" alt="" />
+            <img src={Logo} width="250px" alt="" className="p-2" />
           </Col>
           <Col xs={8} className="mt-3">
             <Stack direction="horizontal" gap="3">

@@ -8,18 +8,18 @@ const TentangKami = () => {
         <Card.Img src={Rs} alt="Card image" />
         <Card.ImgOverlay>
           <Container>
-            <h1 className="tentang">Tentang Kami</h1>
+            <h1>Tentang Kami</h1>
           </Container>
         </Card.ImgOverlay>
       </Card>
-      <Container className="mt-5 mb-5">
+      <Container className="mt-5 mb-5 tentang-content h-80 p-2">
         <Row>
-          <Col>
+          <Col xs="5">
             <img src={logoRs} alt="logo" className="logoRs" />
           </Col>
-          <Col>
-            <h1>SELAMAT DATANG DI RUMAH SAKIT BUNDA PURWOKERTO</h1>
-            <h2>kesehatan adalah hal yang penting</h2>
+          <Col xs="7">
+            <h3>SELAMAT DATANG DI RUMAH SAKIT BUNDA PURWOKERTO</h3>
+            <h2 className="deskripsi">Sejarah Rumah Sakit Bunda Purwokerto</h2>
             <p>
               Rumah Sakit Bunda Purwokerto merupakan Rumah sakit swasta di bawah
               naungan Yayasan Bunda Purwokerto. Di bangun sejak 09 Agustus 1989
