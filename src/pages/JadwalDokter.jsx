@@ -1,10 +1,11 @@
 import { Card, Container, Row, Col } from "react-bootstrap";
 import deskDok from "../assets/images/deskdok.png";
 import Dok from "../assets/images/dok1.png";
+import Layout from "../components/Layout";
 
 const JadwalDokter = () => {
   return (
-    <>
+    <Layout>
       <div className="dokter">
         <Card className="text-dark">
           <Card.Img src={deskDok} alt="Card image" />
@@ -94,7 +95,7 @@ const JadwalDokter = () => {
           </Container>
         </div>
       </div>
-    </>
+    </Layout>
   );
 };
 

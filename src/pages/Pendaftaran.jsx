@@ -1,8 +1,9 @@
 import { Row, Col, Form, Container } from "react-bootstrap";
+import Layout from "../components/Layout";
 
 const Pendaftaran = () => {
   return (
-    <>
+    <Layout>
       <section className="my-5">
         <Container>
           <Row>
@@ -86,7 +87,7 @@ const Pendaftaran = () => {
           </Row>
         </Container>
       </section>
-    </>
+    </Layout>
   );
 };
 

@@ -1,11 +1,25 @@
 import { Container, Nav, Navbar, Row, Col, Stack } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 import Logo from "../assets/images/logo-simarsa.png";
 import Telp from "../assets/images/telp.png";
 import Jam from "../assets/images/jam.png";
 import Lokasi from "../assets/images/lokasi.png";
 
-const Navigasi = () => {
+import {
+  ABOUT,
+  ADMIN_DASHBOARD,
+  DAFTAR,
+  DOKTER,
+  LAYANAN,
+  HOME,
+  HUBUNGI,
+} from "../router";
+
+const NavigasiBar = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <section className="container navbar-logo">
@@ -33,26 +47,31 @@ const Navigasi = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <NavLink className="nav-link" to="/">
+              <NavLink className="nav-link" to={HOME}>
                 Halaman Utama
               </NavLink>
-              <NavLink className="nav-link" to="/tentangkami">
+              <NavLink className="nav-link" to={ABOUT}>
                 Tentang Kami
               </NavLink>
-              <NavLink className="nav-link" to="/fasilitas">
+              <NavLink className="nav-link" to={LAYANAN}>
                 Layanan
               </NavLink>
-              <NavLink className="nav-link" to="/jadwaldokter">
+              <NavLink className="nav-link" to={DOKTER}>
                 Jadwal Dokter
               </NavLink>
-              <NavLink className="nav-link" to="/pendaftaran">
+              <NavLink className="nav-link" to={DAFTAR}>
                 Pendaftaran Online
               </NavLink>
-              <NavLink className="nav-link" to="/hubungikami">
+              <NavLink className="nav-link" to={HUBUNGI}>
                 Hubungi Kami
               </NavLink>
             </Nav>
-            <button className="tombol">LOGIN</button>
+            <button
+              className="tombol"
+              onClick={() => navigate(ADMIN_DASHBOARD)}
+            >
+              LOGIN
+            </button>
           </Navbar.Collapse>
         </Container>
       </Navbar>
@@ -60,4 +79,4 @@ const Navigasi = () => {
   );
 };
 
-export default Navigasi;
+export default NavigasiBar;

@@ -2,9 +2,11 @@ import React from "react";
 import picFas from "../assets/images/picFas.png";
 import Dok from "../assets/images/dok1.png";
 import { Row, Col, Container, Card, Stack } from "react-bootstrap";
+import Layout from "../components/Layout";
+
 const Beranda = () => {
   return (
-    <>
+    <Layout>
       <div className="beranda">
         <h1 className="ms-5 judul">
           Selamat Datang Di Website Resmi <br />
@@ -78,7 +80,7 @@ const Beranda = () => {
           </Row>
         </Container>
       </div>
-    </>
+    </Layout>
   );
 };
 
