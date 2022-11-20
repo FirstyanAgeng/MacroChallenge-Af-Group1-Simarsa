@@ -6,6 +6,7 @@ import Layanan from "./pages/Layanan";
 import DaftarDokter from "./pages/JadwalDokter";
 import Pendaftaran from "./pages/Pendaftaran";
 import AdminHome from "./pages/admin/Dashboard";
+import Login from "./pages/admin/Login";
 
 import {
   HOME,
@@ -15,6 +16,7 @@ import {
   LAYANAN,
   HUBUNGI,
   ADMIN_DASHBOARD,
+  LOGIN
 } from "./router";
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
         <Route path={DAFTAR} element={<Pendaftaran />} />
         <Route path={HUBUNGI} element={<HubungiKami />} />
         <Route path={ADMIN_DASHBOARD} element={<AdminHome />} />
+        <Route path={LOGIN} element={<Login/>}/>
       </Routes>
     </>
   );

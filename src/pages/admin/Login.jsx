@@ -1,19 +1,12 @@
 import { Container, Card, Form, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import React from "react";
+import { ADMIN_DASHBOARD } from "../../router";
 import Logo1 from "../../assets/images/logo1.png";
-
+import "../../styles/admin.css"
 const Login = () => {
-  // const [admin, setLogin] = React.useState(false);
-  // if (admin) {
-  //   return (
-  //     <>
-  //       <Header />
-  //       <AdminHome />
-  //       {/* <AdminHome/> */}
-  //       {/* <h1>halo selamat datang</h1> */}
-  //     </>
-  //   );
-  // }
+  const navigate = useNavigate();
+
 
   return (
     <>
@@ -22,7 +15,7 @@ const Login = () => {
           <Card>
             <Card.Img variant="top" src={Logo1} />
             <Card.Body>
-              <Card.Title className="log">LOGIN</Card.Title>
+              <h3 className="log">LOGIN</h3>
               <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                   <Form.Label className="hdua">ID</Form.Label>
@@ -40,10 +33,8 @@ const Login = () => {
                   <Button
                     variant="primary"
                     size="lg"
-                    // onClick={function () {
-                    //   return setLogin(false);
-                    // }}
-                  >
+                    onClick={() => navigate(ADMIN_DASHBOARD)}
+                    >
                     MASUK
                   </Button>
                 </div>

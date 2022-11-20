@@ -1,5 +1,6 @@
 import { Container, Card, Row, Col, Button } from "react-bootstrap";
 import AdminLayout from "../../components/AdminLayout";
+import "../../styles/admin.css";
 
 import Pana from "../../assets/images/pana.png";
 import Data from "../../assets/images/data.png";
@@ -19,7 +20,7 @@ const AdminHome = () => {
           </Row>
         </Container>
 
-        <Container className="container-fluid cont">
+        <Container className="cont">
           <Row>
             <Col>
               <Card>
