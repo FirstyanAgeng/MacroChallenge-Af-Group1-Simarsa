@@ -9,6 +9,7 @@ import AdminHome from "./pages/admin/Dashboard";
 import Login from "./pages/admin/Login";
 import DataDokter from "./pages/admin/DataDokter";
 import DetailDokter from "./pages/admin/DetailDokter"
+import DataPoliklinik from "./pages/admin/DataPoliklinik"
 
 import {
   HOME,
@@ -20,7 +21,8 @@ import {
   ADMIN_DASHBOARD,
   LOGIN,
   DATA_DOKTER,
-  DETAIL_DOKTER
+  DETAIL_DOKTER,
+  DATA_POLIKLINIK
 } from "./router";
 
 function App() {
@@ -37,6 +39,7 @@ function App() {
         <Route path={LOGIN} element={<Login/>}/>
         <Route path={DATA_DOKTER} element={<DataDokter/>}/>
         <Route path={DETAIL_DOKTER} element ={<DetailDokter/>}/>
+        <Route path={DATA_POLIKLINIK} element={<DataPoliklinik/>}/>
       </Routes>
     </>
   );

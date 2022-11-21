@@ -251,3 +251,33 @@
 .km2{
   background-color: #0957DE;
 }
+
+/* data poliklinik */
+.card2{
+  margin: auto;
+  padding: 10px 20px;
+  width: 400px;
+  height: 130px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 1px 3px 3px rgba(124, 124, 124, 0.5);
+  text-align: left;
+}
+.prog{
+  background-color: #FF795C;
+  color: white;
+  font-size: 12px;
+  margin: auto;
+  border-radius: 20px 20px 20px 20px;
+  padding: 3px 0;
+}
+.prog3{
+  background-color: #FF9D00;
+}
+.prog1{
+  background-color: red;
+}
+.prog2{
+  background-color: #41E2EB
+  ;
+}
