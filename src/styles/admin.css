@@ -105,4 +105,81 @@
   max-height: 500px;
 }
 
+.center{
+  padding-top: 60px;;
+  text-align: center;
+}
 
+.nv{
+  display: inline-block;
+  padding-right: 0px;
+}
+.pageDataDokter{
+  background-color: whitesmoke;
+  height: 100vh;
+}
+
+.btnDataDokter{
+  background-color: #0957DE;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.btnDataDokter:hover {
+  background-color: white;
+  color: #0957DE;
+  border-color: #0957DE;
+}
+.btn2{
+  background-color: rgb(165, 165, 165);
+  float: right;
+}
+.btn2:hover{
+  background-color: white;
+  border-color: rgb(165, 165, 165);
+  color: rgb(165, 165, 165);
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.btnModal{
+  padding: 5px 30px;
+}
+
+.cardDataDokter{
+  margin: auto;
+  width: 1500px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 1px 3px 3px rgba(124, 124, 124, 0.5);
+}
+.content{
+  margin: auto;
+  margin-top: 50px;
+  width: 650px;
+  border: none;
+  border-radius: 15px;
+  background-color: whitesmoke;
+}
+.text{
+  color: #0957DE;
+  display: block;
+  font-size: small;
+  margin-top: -5px;
+}
+.cardDo1{
+  margin: auto;
+  padding: 10px 20px;
+  width: 400px;
+  height: 130px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 1px 3px 3px rgba(124, 124, 124, 0.5);
+}
+.btnpad{
+  padding: 10px 40px;
+}

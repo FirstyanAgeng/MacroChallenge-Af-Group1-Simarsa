@@ -6,5 +6,6 @@ const LAYANAN = "/fasilitas";
 const HUBUNGI = "/hubungi-kami";
 const ADMIN_DASHBOARD = "/dashboard";
 const LOGIN = "/login";
+const DATA_DOKTER = "/dataDokter";
 
-export { HOME, ABOUT, DAFTAR, DOKTER, LAYANAN, HUBUNGI, ADMIN_DASHBOARD, LOGIN };
+export { HOME, ABOUT, DAFTAR, DOKTER, LAYANAN, HUBUNGI, ADMIN_DASHBOARD, LOGIN, DATA_DOKTER};
