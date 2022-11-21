@@ -1,17 +1,19 @@
 import { Container, Card, Row, Col, Button, Nav, Form, Modal } from "react-bootstrap";
 import AdminLayout from "../../components/AdminLayout";
-import { ADMIN_DASHBOARD } from "../../router";
-
+import { ADMIN_DASHBOARD,  DETAIL_DOKTER} from "../../router";
+import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "../../styles/admin.css";
 import React, { useState } from 'react';
 
- 
+
 const DataDokter = () => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const navigate = useNavigate();
+
 
     return (
         <AdminLayout>
@@ -52,7 +54,7 @@ const DataDokter = () => {
                         <Modal.Body>
                         <Form>
                             <Form.Group className="mb-3">
-                            <Form.Label className="bold ">Nama Dokter</Form.Label>
+                            <Form.Label className="bold tab1">Nama Dokter</Form.Label>
                             <Form.Control
                                 type="text"
                                 placeholder="Nama dokter"
@@ -110,7 +112,7 @@ const DataDokter = () => {
                                         <h6 className="text mt-2 mb-5">dr.Wahyu Mustiadi, Sp.P. M. Kes</h6>
                                     </Col>
                                     <Col className="mt-3 text-center mt-4">
-                                    <Button class="btnDataDokter btn btnpad">Lihat data</Button>
+                                    <button class="btnDataDokter btn btnpad"  onClick={() => navigate(DETAIL_DOKTER)}>Lihat data</button>
                                     <small className="text">Jadwal: Selasa, Kamis, Sabtu</small>
                                     </Col>
                                 </Row>
@@ -125,7 +127,7 @@ const DataDokter = () => {
                                         <h6 className="text mt-2 mb-5">dr.Anisah Amalia, Sp.P.Rad</h6>
                                     </Col>
                                     <Col className="mt-3 text-center mt-4">
-                                    <Button class="btnDataDokter btn btnpad">Lihat data</Button>
+                                    <button class="btnDataDokter btn btnpad" onClick={() => navigate(DETAIL_DOKTER)}>Lihat data</button>
                                     <small className="text">Jadwal: Senin -  Kamis</small>
                                     </Col>
                                 </Row>
@@ -142,7 +144,7 @@ const DataDokter = () => {
                                         <h6 className="text mt-2 mb-5">dr.Tiara Nurlita Sari, Sp.A.</h6>
                                     </Col>
                                     <Col className="mt-3 text-center mt-4">
-                                    <Button class="btnDataDokter btn btnpad">Lihat data</Button>
+                                    <button class="btnDataDokter btn btnpad " onClick={() => navigate(DETAIL_DOKTER)}>Lihat data</button>
                                     <small className="text">Jadwal: Senin - Kamis</small>
                                     </Col>
                                 </Row>
@@ -157,7 +159,7 @@ const DataDokter = () => {
                                         <h6 className="text mt-2 mb-5">dr.Yohanes Wiliam Prasetyo, Sp.S</h6>
                                     </Col>
                                     <Col className="mt-3 text-center mt-4">
-                                    <Button class="btnDataDokter btn btnpad">Lihat data</Button>
+                                    <button class="btnDataDokter btn btnpad" onClick={() => navigate(DETAIL_DOKTER)}>Lihat data</button>
                                     <small className="text">Jadwal: Senin -  Sabtu</small>
                                     </Col>
                                 </Row>
@@ -174,7 +176,7 @@ const DataDokter = () => {
                                         <h6 className="text mt-2 mb-5">dr.Imade Dikky Kalsa, Sp.A.</h6>
                                     </Col>
                                     <Col className="mt-3 text-center mt-4">
-                                    <Button class="btnDataDokter btnpad btn">Lihat data</Button>
+                                    <button class="btnDataDokter btnpad btn" onClick={() => navigate(DETAIL_DOKTER)}>Lihat data</button>
                                     <small className="text">Jadwal: Senin - Sabtu</small>
                                     </Col>
                                 </Row>
@@ -189,7 +191,7 @@ const DataDokter = () => {
                                         <h6 className="text mt-2 mb-5">dr.I Gede Arinton, Sp.PD-KGEH,M.Kom,MMR</h6>
                                     </Col>
                                     <Col className="mt-3 text-center mt-4">
-                                    <Button class="btnDataDokter btn btnpad">Lihat data</Button>
+                                    <button class="btnDataDokter btn btnpad" onClick={() => navigate(DETAIL_DOKTER)}>Lihat data</button>
                                     <small className="text">Jadwal: Senin -  Sabtu</small>
                                     </Col>
                                 </Row>
@@ -206,7 +208,7 @@ const DataDokter = () => {
                                         <h6 className="text mt-2 mb-5">dr.Sutrisno, M.Kes., SP.OG,Subsp.ONK</h6>
                                     </Col>
                                     <Col className="mt-3 text-center mt-4">
-                                    <Button class="btnDataDokter btnpad btn">Lihat data</Button>
+                                    <button class="btnDataDokter btnpad btn" onClick={() => navigate(DETAIL_DOKTER)}>Lihat data</button>
                                     <small className="text">Jadwal: Senin - Sabtu</small>
                                     </Col>
                                 </Row>
@@ -221,7 +223,7 @@ const DataDokter = () => {
                                         <h6 className="text mt-2 mb-5">dr.Achmad Happy Oktavianto, M.Sc, Sp.PD</h6>
                                     </Col>
                                     <Col className="mt-3 text-center mt-4">
-                                    <Button class="btnDataDokter btn btnpad">Lihat data</Button>
+                                    <button class="btnDataDokter btn btnpad"onClick={() => navigate(DETAIL_DOKTER)}>Lihat data</button>
                                     <small className="text">Jadwal: Senin -  Sabtu</small>
                                     </Col>
                                 </Row>
@@ -238,7 +240,7 @@ const DataDokter = () => {
                                         <h6 className="text mt-2 mb-5">dr.Budi Irawan, M.Sc, Sp.OG</h6>
                                     </Col>
                                     <Col className="mt-3 text-center mt-4">
-                                    <Button class="btnDataDokter btn btnpad">Lihat data</Button>
+                                    <button class="btnDataDokter btn btnpad" onClick={() => navigate(DETAIL_DOKTER)}>Lihat data</button>
                                     <small className="text">Jadwal: Senin -  Sabtu</small>
                                     </Col>
                                 </Row>

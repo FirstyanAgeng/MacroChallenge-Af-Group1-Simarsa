@@ -7,5 +7,6 @@ const HUBUNGI = "/hubungi-kami";
 const ADMIN_DASHBOARD = "/dashboard";
 const LOGIN = "/login";
 const DATA_DOKTER = "/dataDokter";
+const DETAIL_DOKTER = "/detailDokter"
 
-export { HOME, ABOUT, DAFTAR, DOKTER, LAYANAN, HUBUNGI, ADMIN_DASHBOARD, LOGIN, DATA_DOKTER};
+export { HOME, ABOUT, DAFTAR, DOKTER, LAYANAN, HUBUNGI, ADMIN_DASHBOARD, LOGIN, DATA_DOKTER, DETAIL_DOKTER};

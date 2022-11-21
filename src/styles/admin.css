@@ -132,6 +132,7 @@
   color: #0957DE;
   border-color: #0957DE;
 }
+
 .btn2{
   background-color: rgb(165, 165, 165);
   float: right;
@@ -182,4 +183,71 @@
 }
 .btnpad{
   padding: 10px 40px;
+}
+
+/* detail dokter */
+.pageJadwalPraktik{
+  background-color: whitesmoke;
+}
+
+.containerJadwalPraktik a {
+  text-decoration: none;
+  color: grey;
+}
+.containerJadwalPraktik a:hover{
+  color: black;
+}
+.cardJadwalPraktik{
+  margin: auto;
+  width: 1500px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 1px 3px 3px rgba(124, 124, 124, 0.5);
+}
+.cardf{
+  width: 300px;
+  margin: 50px auto;
+}
+.uk{
+  margin: 50px;
+  width: 300px;
+}
+.hw{
+  color: #0957DE;
+}
+.hw1{
+  color: #9B9B9B;
+}
+.hw2{
+  color: #C4C3C3;
+}
+.category{
+  background-color: #09C2DE;
+  color: white;
+  width: 50%;
+  margin: auto;
+  border-radius: 20px 20px 20px 20px;
+  padding: 7px;
+}
+.km, .km2{
+  font-size: 20px;
+  background-color: #09C2DE;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+}
+.c1{
+  font-size: x-large;
+  margin-left: 60px;
+}
+.tab1{
+  margin: 0 10px;
+}
+.tabq{
+  color: black;
+}
+.km2{
+  background-color: #0957DE;
 }
