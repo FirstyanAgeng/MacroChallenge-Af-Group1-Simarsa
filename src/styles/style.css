@@ -87,6 +87,8 @@ p {
   border-radius: 50px;
   background-color: #4caf50;
   color: white;
+  padding: 5px;
+  font-size: 15px;
   width: 120px;
 }
 
@@ -104,6 +106,13 @@ p {
   padding: 10px;
   border-radius: 5px;
   height: 78px;
+  box-shadow: 1px 3px 3px rgba(124, 124, 124, 0.7);
+}
+
+.tombol-submit:hover {
+  background-color: white;
+  color: #0957de;
+  transition: 0.3s ease;
 }
 
 .tentang {

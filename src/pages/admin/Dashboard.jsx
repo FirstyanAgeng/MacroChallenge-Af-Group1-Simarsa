@@ -1,11 +1,15 @@
 import { Container, Card, Row, Col, Button } from "react-bootstrap";
 import AdminLayout from "../../components/AdminLayout";
+import React from "react";
 import "../../styles/admin.css";
+import { DATA_DOKTER, DATA_POLIKLINIK } from "../../router";
+import { useNavigate } from "react-router-dom";
 
 import Pana from "../../assets/images/pana.png";
 import Data from "../../assets/images/data.png";
 
 const AdminHome = () => {
+  const navigate = useNavigate();
   return (
     <AdminLayout>
       <div className="adminHome">
@@ -53,10 +57,14 @@ const AdminHome = () => {
                       </Card.Body>
                     </Col>
                     <Col>
-                      <Card.Body>
+                      <Card.Body className="center">
                         <Card.Title>DATA POLIKLINIK</Card.Title>
-                        <Button variant="primary" className="btnHome mb-4">
-                          Lihat Data
+                        <Button
+                          variant="primary"
+                          className="btnHome mb-4"
+                          onClick={() => navigate(DATA_POLIKLINIK)}
+                        >
+                          LIHAT DATA
                         </Button>
                       </Card.Body>
                     </Col>
@@ -74,13 +82,14 @@ const AdminHome = () => {
                         </Card.Body>
                       </Col>
                       <Col>
-                        <Card.Body>
+                        <Card.Body className="center">
                           <Card.Title>DATA DOKTER</Card.Title>
                           <Button
                             variant="primary"
                             className="btnHome btn btn-primary mb-4"
+                            onClick={() => navigate(DATA_DOKTER)}
                           >
-                            Lihat Data
+                            LIHAT DATA
                           </Button>
                         </Card.Body>
                       </Col>

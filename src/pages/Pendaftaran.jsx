@@ -44,30 +44,30 @@ const Pendaftaran = () => {
             <Col>
               <Form.Group className="mb-3">
                 <Form.Label>Poli</Form.Label>
-                <Form.Select placeholder="masukan jenis kelamin anda">
+                <Form.Select placeholder="Pilih poliklinik yang akan dituju">
                   <option>Poli Umum</option>
                   <option>Poli Gigi</option>
                 </Form.Select>
               </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Label>Dokter</Form.Label>
-                <Form.Select placeholder="masukan jenis kelamin anda">
+                <Form.Select placeholder="Pilih Dokter">
                   <option>Pria</option>
                   <option>Wanita</option>
                 </Form.Select>
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Jadwal</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Control type="email" placeholder="masukan jadwal" />
                 <Form.Text className="text-muted">
-                  *jadwal dokter belum tetap
+                  *Silahkan masukan jadwal
                 </Form.Text>
               </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Label>JAM</Form.Label>
                 <Form.Select placeholder="masukan jenis kelamin anda">
-                  <option>Pria</option>
-                  <option>Wanita</option>
+                  <option>Pagi</option>
+                  <option>Siang</option>
                 </Form.Select>
               </Form.Group>
               <Form.Group

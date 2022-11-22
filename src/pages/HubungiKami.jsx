@@ -17,12 +17,12 @@ const HubungiKami = () => {
         </Card>
         <Container>
           <div className="mt-5 text-center">
-            <img src={map} className="img-fluid" alt="" />
+            <img src={map} className="img-fluid" width="100%" alt="" />
           </div>
           <div className="mt-5">
-            <h2>Hubungi Kami</h2>
             <Row>
               <Col>
+                <h2>Hubungi Kami</h2>
                 <Form>
                   <Form.Group
                     className="mb-3"
@@ -41,7 +41,7 @@ const HubungiKami = () => {
                   <Button>Submit</Button>
                 </Form>
               </Col>
-
+              <Col></Col>
               <Col></Col>
             </Row>
           </div>

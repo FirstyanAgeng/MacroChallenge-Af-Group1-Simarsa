@@ -7,7 +7,9 @@ import DaftarDokter from "./pages/JadwalDokter";
 import Pendaftaran from "./pages/Pendaftaran";
 import AdminHome from "./pages/admin/Dashboard";
 import Login from "./pages/admin/Login";
-
+import DataDokter from "./pages/admin/DataDokter";
+import DetailDokter from "./pages/admin/DataDokter";
+import DataPoliklinik from "./pages/admin/DataPoliklinik";
 import {
   HOME,
   ABOUT,
@@ -17,6 +19,9 @@ import {
   HUBUNGI,
   ADMIN_DASHBOARD,
   LOGIN,
+  DETAIL_DOKTER,
+  DATA_POLIKLINIK,
+  DATA_DOKTER,
 } from "./router";
 
 function App() {
@@ -31,6 +36,9 @@ function App() {
         <Route path={HUBUNGI} element={<HubungiKami />} />
         <Route path={ADMIN_DASHBOARD} element={<AdminHome />} />
         <Route path={LOGIN} element={<Login />} />
+        <Route path={DATA_DOKTER} element={<DataDokter />} />
+        <Route path={DETAIL_DOKTER} element={<DetailDokter />} />
+        <Route path={DATA_POLIKLINIK} element={<DataPoliklinik />} />
       </Routes>
     </>
   );
