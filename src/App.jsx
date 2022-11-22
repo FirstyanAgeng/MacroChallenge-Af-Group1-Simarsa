@@ -10,6 +10,7 @@ import Login from "./pages/admin/Login";
 import DataDokter from "./pages/admin/DataDokter";
 import DetailDokter from "./pages/admin/DetailDokter"
 import DataPoliklinik from "./pages/admin/DataPoliklinik"
+import DataPoli from "./pages/admin/DataPoli"
 
 import {
   HOME,
@@ -22,7 +23,8 @@ import {
   LOGIN,
   DATA_DOKTER,
   DETAIL_DOKTER,
-  DATA_POLIKLINIK
+  DATA_POLIKLINIK,
+  DATA_POLI
 } from "./router";
 
 function App() {
@@ -40,6 +42,7 @@ function App() {
         <Route path={DATA_DOKTER} element={<DataDokter/>}/>
         <Route path={DETAIL_DOKTER} element ={<DetailDokter/>}/>
         <Route path={DATA_POLIKLINIK} element={<DataPoliklinik/>}/>
+        <Route path={DATA_POLI} element={<DataPoli/>}/>
       </Routes>
     </>
   );

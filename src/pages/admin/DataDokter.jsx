@@ -1,8 +1,8 @@
-import { Container, Card, Row, Col, Button, Nav, Form, Modal } from "react-bootstrap";
+import { Container, Card, Row, Col, Button, Nav, Form, Modal, Navbar } from "react-bootstrap";
 import AdminLayout from "../../components/AdminLayout";
 import { ADMIN_DASHBOARD,  DETAIL_DOKTER} from "../../router";
+import { AiFillHome, AiOutlineRight } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 import "../../styles/admin.css";
 import React, { useState } from 'react';
 
@@ -20,12 +20,19 @@ const DataDokter = () => {
             <div className="dataDokter">
         <Container className="container2 container mb-4">
         <Row>
-            <Nav className="me-auto">
-            <Nav.Item>
-                <NavLink className="nav-link nv" to={ADMIN_DASHBOARD}>Home</NavLink>
-                <NavLink className="nav-link nv">Data Dokter</NavLink>
-            </Nav.Item>
-            </Nav>
+
+        <Navbar bg="light" expand="lg">
+      <Container>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <AiFillHome size="25px" className="ho"/>
+            <Nav.Link href={ADMIN_DASHBOARD}>Home</Nav.Link><AiOutlineRight className="ho1"/>
+            <Nav.Link style={{color: 'black'}}>Data Dokter</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
         </Row>
         </Container>
 

@@ -281,3 +281,49 @@
   background-color: #41E2EB
   ;
 }
+.sed{
+  background-color: #09C2DE;
+  font-size: 15px;
+  color: white;
+  margin: auto;
+  border-radius: 10px;
+  padding: 3px;
+}
+.sed1{
+  background-color: #0957DE;
+  font-weight: bold;
+  padding: 2px 30px;
+}
+.sed2{
+    background-color: #FF795C;
+    font-weight: bold;
+    padding: 2px 30px;
+}
+.ad{
+  display: flex;
+}
+.left{
+  margin-right: 2px;
+}
+.clr{
+  background-color: #9BC9FB;
+  color: black;
+}
+.wt{
+  background-color: white;
+  color: black;
+}
+.kan{
+  color: #4186EB;
+  
+}
+.kir{
+  color: #C4C3C3;
+}
+.ho{
+  margin-top: 7px;
+  color: #C4C3C3;
+}
+.ho1{
+  margin-top: 13px;
+}

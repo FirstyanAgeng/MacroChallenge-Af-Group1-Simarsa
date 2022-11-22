@@ -1,6 +1,6 @@
-import { Container, Card, Row, Col, Button, Nav, Form, Tab, Tabs } from "react-bootstrap";
+import { Container, Card, Row, Col, Button, Nav, Form, Tab, Tabs, Navbar } from "react-bootstrap";
 import { ADMIN_DASHBOARD,  DATA_DOKTER} from "../../router";
-import { NavLink } from "react-router-dom";
+import { AiFillHome, AiOutlineRight } from "react-icons/ai";
 import AdminLayout from "../../components/AdminLayout";
 import "../../styles/admin.css";
 
@@ -13,13 +13,19 @@ const DetailDokter = () =>{
             <div className="detailDokter">
             <Container className="container2 container mb-4">
         <Row>
-            <Nav className="me-auto">
-            <Nav.Item>
-                <NavLink className="nav-link nv" to={ADMIN_DASHBOARD}>Home</NavLink>
-                <NavLink className="nav-link nv" to={DATA_DOKTER}>Data Dokter</NavLink>
-                <NavLink className="nav-link nv">Detail Dokter</NavLink>
-            </Nav.Item>
-            </Nav>
+        <Navbar bg="light" expand="lg">
+      <Container>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <AiFillHome size="25px" className="ho"/>
+            <Nav.Link href={ADMIN_DASHBOARD}>Home</Nav.Link><AiOutlineRight className="ho1"/>
+            <Nav.Link href={DATA_DOKTER}>Data Dokter</Nav.Link><AiOutlineRight className="ho1"/>
+            <Nav.Link style={{color: 'black'}}>Data Detail Dokter</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
         </Row>
         </Container>
 
