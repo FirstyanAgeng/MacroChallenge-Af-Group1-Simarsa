@@ -9,7 +9,7 @@ const JadwalDokter = () => {
       <div className="dokter">
         <Card className="text-dark">
           <Card.Img src={deskDok} alt="Card image" />
-          <Card.ImgOverlay>
+          <Card.ImgOverlay className="background-filter">
             <Container>
               <h1>Jadwal Dokter</h1>
             </Container>

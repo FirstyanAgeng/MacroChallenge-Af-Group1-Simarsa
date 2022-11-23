@@ -19,7 +19,7 @@
 }
 
 .beranda {
-  background: url(../assets/images/background.jpg);
+  background-image: url(../assets/images/background.jpg);
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -145,6 +145,7 @@ p {
 
 .isi-kartu {
   background-color: #bfd2f8;
+  color: #1f2b6c;
 }
 
 .kartu-layanan {
@@ -179,3 +180,20 @@ footer p {
   text-decoration: none;
   padding-right: 10px;
 } */
+
+.background-filter {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.background-filter2 {
+  height: 100vh;
+  background: linear-gradient(
+    268.24deg,
+    #e5e4e8 5%,
+    rgba(235, 234, 239, 0) 10%
+  );
+}
+
+.tengah {
+  margin: 0 auto;
+}

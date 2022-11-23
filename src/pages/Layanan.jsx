@@ -14,7 +14,7 @@ const Layanan = () => {
       <div className="Layanan">
         <Card className="bg-light text-dark">
           <Card.Img src={deskfas} alt="Card image" />
-          <Card.ImgOverlay>
+          <Card.ImgOverlay className="background-filter">
             <Container>
               <h1>Layanan Kami</h1>
             </Container>
