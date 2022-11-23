@@ -3,10 +3,17 @@ import { useNavigate } from "react-router-dom";
 import React from "react";
 import { ADMIN_DASHBOARD } from "../../router";
 import Logo1 from "../../assets/images/logo1.png";
+<<<<<<< HEAD
 import "../../styles/admin.css";
 
 const Login = () => {
   const navigate = useNavigate();
+=======
+import "../../styles/admin.css"
+const Login = () => {
+  const navigate = useNavigate();
+
+>>>>>>> coba1
 
   return (
     <>
@@ -34,7 +41,11 @@ const Login = () => {
                     variant="primary"
                     size="lg"
                     onClick={() => navigate(ADMIN_DASHBOARD)}
+<<<<<<< HEAD
                   >
+=======
+                    >
+>>>>>>> coba1
                     MASUK
                   </Button>
                 </div>
