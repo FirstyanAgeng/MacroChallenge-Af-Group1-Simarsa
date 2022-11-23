@@ -8,10 +8,12 @@ const Beranda = () => {
   return (
     <Layout>
       <div className="beranda">
-        <h1 className="ms-5 judul">
-          Selamat Datang Di Website Resmi <br />
-          Rumah Sakit Bunda Purwokerto
-        </h1>
+        <div className="background-filter2">
+          <h1 className="ms-5 judul">
+            Selamat Datang Di Website Resmi <br />
+            Rumah Sakit Bunda Purwokerto
+          </h1>
+        </div>
       </div>
       <div className="beranda-content">
         <Container>
@@ -29,7 +31,7 @@ const Beranda = () => {
         </Container>
       </div>
       <div className="beranda-layanan container my-5 h-50">
-        <h2 className="text-center p-2">Layanan</h2>
+        <h2 className="text-center p-2 mb-5">Layanan</h2>
         <Container>
           <Row className="container">
             <Col>
@@ -48,35 +50,31 @@ const Beranda = () => {
           </Row>
         </Container>
       </div>
-      <div className="beranda-jadwal">
+      <div className="beranda-jadwal pb-5">
         <Container>
           <h2 className="pt-5 text-center">Jadwal Dokter</h2>
-          <Row className="justify-content-center">
-            <Col>
-              <Stack direction="horizontal" gap="5">
-                <Card style={{ width: "15rem" }} className="isi-kartu">
-                  <Card.Img variant="top" src={Dok} />
-                  <Card.Body>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Card.Link href="#">Card Link</Card.Link>
-                  </Card.Body>
-                </Card>
+          <Row className="justify-content-center tengah mt-5">
+            <Card style={{ width: "17rem" }} className="isi-kartu me-5">
+              <Card.Img variant="top" src={Dok} />
+              <Card.Body>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+                <Card.Link href="#">Card Link</Card.Link>
+              </Card.Body>
+            </Card>
 
-                <Card style={{ width: "15rem" }} className="isi-kartu">
-                  <Card.Img variant="top" src={Dok} />
-                  <Card.Body>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Card.Link href="#">Card Link</Card.Link>
-                  </Card.Body>
-                </Card>
-              </Stack>
-            </Col>
+            <Card style={{ width: "17rem" }} className="isi-kartu ms-5">
+              <Card.Img variant="top" src={Dok} />
+              <Card.Body>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+                <Card.Link href="#">Card Link</Card.Link>
+              </Card.Body>
+            </Card>
           </Row>
         </Container>
       </div>

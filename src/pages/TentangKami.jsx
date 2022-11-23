@@ -9,7 +9,7 @@ const TentangKami = () => {
       <div className="tentangKami">
         <Card className="bg-light text-dark tentang">
           <Card.Img src={Rs} alt="Card image" />
-          <Card.ImgOverlay>
+          <Card.ImgOverlay className="background-filter">
             <Container>
               <h1>Tentang Kami</h1>
             </Container>
