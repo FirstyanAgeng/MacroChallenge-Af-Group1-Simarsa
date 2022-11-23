@@ -4,6 +4,9 @@ import React from "react";
 import "../../styles/admin.css";
 import { DATA_DOKTER, DATA_POLIKLINIK } from "../../router";
 import { useNavigate } from "react-router-dom";
+import { FaPlus } from "react-icons/fa";
+import { RiShieldCrossFill } from "react-icons/ri";
+
 
 import Pana from "../../assets/images/pana.png";
 import Data from "../../assets/images/data.png";
@@ -35,13 +38,13 @@ const AdminHome = () => {
                   <Card.Img variant="top" src={Pana} />
                   <Card.Text>Saat ini, Kamis, 24/11/2022 8:00:16</Card.Text>
                   <Button variant="primary" className="btnHome btn y mb-3">
-                    + Pendaftaran pasien baru
+                    <FaPlus size="20px" className="ta"/>Pendaftaran pasien baru
                   </Button>
                   <Button
                     variant="primary"
                     className="btnHome btn1 btn-primary mb-4"
-                  >
-                    + Pendaftaran pasien lama
+                  ><RiShieldCrossFill size="23px" className="ta"/>
+                    Pendaftaran pasien lama
                   </Button>
                 </Card.Body>
               </Card>
