@@ -7,12 +7,12 @@ import Layout from "../components/Layout";
 const Beranda = () => {
   return (
     <Layout>
-      <div className="beranda">
-        <h1 className="ms-5 judul">
-          Selamat Datang Di Website Resmi <br />
-          Rumah Sakit Bunda Purwokerto
-        </h1>
-      </div>
+        <div className="background-filter2">
+          <h1 className="ms-5 judul">
+            Selamat Datang Di Website Resmi <br />
+            Rumah Sakit Bunda Purwokerto
+          </h1>
+        </div>
       <div className="beranda-content">
         <Container>
           <h2 className="pt-5">Sejarah Rumah Sakit Bunda</h2>
@@ -29,7 +29,7 @@ const Beranda = () => {
         </Container>
       </div>
       <div className="beranda-layanan container my-5 h-50">
-        <h2 className="text-center p-2">Layanan</h2>
+      <h2 className="text-center p-2 mb-5">Layanan</h2>
         <Container>
           <Row className="container">
             <Col>
