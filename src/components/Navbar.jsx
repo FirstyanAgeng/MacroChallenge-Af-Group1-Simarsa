@@ -9,10 +9,6 @@ import Lokasi from "../assets/images/lokasi.png";
 
 import {
   ABOUT,
-<<<<<<< HEAD
-=======
-  // ADMIN_DASHBOARD,
->>>>>>> coba1
   LOGIN,
   DAFTAR,
   DOKTER,
@@ -70,14 +66,7 @@ const NavigasiBar = () => {
                 Hubungi Kami
               </NavLink>
             </Nav>
-<<<<<<< HEAD
             <button className="tombol" onClick={() => navigate(LOGIN)}>
-=======
-            <button
-              className="tombol"
-              onClick={() => navigate(LOGIN)}
-            >
->>>>>>> coba1
               LOGIN
             </button>
           </Navbar.Collapse>
