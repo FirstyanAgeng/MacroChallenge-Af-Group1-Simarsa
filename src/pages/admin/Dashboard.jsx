@@ -2,7 +2,7 @@ import { Container, Card, Row, Col, Button } from "react-bootstrap";
 import AdminLayout from "../../components/AdminLayout";
 import React from "react";
 import "../../styles/admin.css";
-import { DATA_DOKTER, DATA_POLIKLINIK } from "../../router";
+import { DATA_DOKTER, DATA_POLIKLINIK, DAFTAR_PASIEN_BARU } from "../../router";
 import { useNavigate } from "react-router-dom";
 import { FaPlus } from "react-icons/fa";
 import { RiShieldCrossFill } from "react-icons/ri";
@@ -37,12 +37,13 @@ const AdminHome = () => {
                   </Card.Title>
                   <Card.Img variant="top" src={Pana} />
                   <Card.Text>Saat ini, Kamis, 24/11/2022 8:00:16</Card.Text>
-                  <Button variant="primary" className="btnHome btn y mb-3">
-                    <FaPlus size="20px" className="ta"/>Pendaftaran pasien baru
+                  <Button variant="primary" className="btnHome btn y mb-3" onClick={() => navigate(DAFTAR_PASIEN_BARU)}>
+                    <FaPlus size="20px" className="ta" />Pendaftaran pasien baru
                   </Button>
                   <Button
                     variant="primary"
                     className="btnHome btn1 btn-primary mb-4"
+                    onClick={() => navigate(DAFTAR_PASIEN_BARU)}
                   ><RiShieldCrossFill size="23px" className="ta"/>
                     Pendaftaran pasien lama
                   </Button>
@@ -89,7 +90,7 @@ const AdminHome = () => {
                           <Card.Title>DATA DOKTER</Card.Title>
                           <Button
                             variant="primary"
-                            className="btnHome btn btn-primary mb-4"
+                            className="btnHome btn btn-primary mb-4 text-center"
                             onClick={() => navigate(DATA_DOKTER)}
                           >
                             LIHAT DATA
