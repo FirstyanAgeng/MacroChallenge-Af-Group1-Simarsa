@@ -7,6 +7,7 @@ import "../styles/style.css";
 import "../styles/admin.css"
 import "../pages/Beranda";
 import { HOME } from "../router";
+import { IoLogOutOutline } from "react-icons/io5";
 
 const AdminNavbar = () => {
   const navigate = useNavigate();
@@ -22,12 +23,11 @@ const AdminNavbar = () => {
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
             <Nav>
               <Navbar.Text>
-                <p className="hsatu">Tiara - Petugas Entry</p>
+                <p className="hsatu"><strong>Tiara</strong> - Petugas Entry</p>
               </Navbar.Text>
             </Nav>
-            <button className="tombol" onClick={() => navigate(HOME)}>
-              LOGOUT
-            </button>
+
+            <IoLogOutOutline onClick={() => navigate(HOME)} style={{color:'white'}} size="27px"/>
           </Navbar.Collapse>
         </Container>
       </Navbar>
