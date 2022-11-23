@@ -1,5 +1,5 @@
 import AdminLayout from "../../components/AdminLayout";
-import { Container, Card, Row, Navbar, Nav, Col, Form, Tabs, Button, Tab} from "react-bootstrap";
+import { Container, Card, Row, Navbar, Nav, Col, Form, Button} from "react-bootstrap";
 import { AiFillHome, AiOutlineRight } from "react-icons/ai";
 import { ADMIN_DASHBOARD, DATA_POLIKLINIK, DATA_POLI} from "../../router";
 

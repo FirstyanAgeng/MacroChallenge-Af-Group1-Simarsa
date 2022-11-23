@@ -1,7 +1,7 @@
 import React from "react";
 import Layanan1 from "../assets/images/layanan1.png";
 import Dok from "../assets/images/dok1.png";
-import { Row, Col, Container, Card, Stack } from "react-bootstrap";
+import { Row, Col, Container, Card,} from "react-bootstrap";
 import Layout from "../components/Layout";
 
 const Beranda = () => {
