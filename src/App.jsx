@@ -18,8 +18,6 @@ import {
   LAYANAN,
   HUBUNGI,
   ADMIN_DASHBOARD,
-  LOGIN,
-  DATA_DOKTER,
 } from "./router";
 
 function App() {
@@ -33,8 +31,6 @@ function App() {
         <Route path={DAFTAR} element={<Pendaftaran />} />
         <Route path={HUBUNGI} element={<HubungiKami />} />
         <Route path={ADMIN_DASHBOARD} element={<AdminHome />} />
-        <Route path={LOGIN} element={<Login />} />
-        <Route path={DATA_DOKTER} element={<DataDokter />} />
       </Routes>
     </>
   );
