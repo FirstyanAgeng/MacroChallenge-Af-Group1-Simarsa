@@ -12,6 +12,7 @@ import DetailDokter from "./pages/admin/DetailDokter";
 import DataPoliklinik from "./pages/admin/DataPoliklinik";
 import DataPoli from "./pages/admin/DataPoli";
 import DataPasien from "./pages/admin/DataPasien";
+import RiwayatPasien from "./pages/admin/RiwayatRekamMedis"
 
 import {
   HOME,
@@ -26,7 +27,8 @@ import {
   DETAIL_DOKTER,
   DATA_POLIKLINIK,
   DATA_POLI,
-  DATA_PASIEN
+  DATA_PASIEN,
+  RIWAYAT_PASIEN
 } from "./router";
 
 function App() {
@@ -46,6 +48,7 @@ function App() {
         <Route path={DATA_POLIKLINIK} element={<DataPoliklinik />} />
         <Route path={DATA_POLI} element={<DataPoli />} />
         <Route path={DATA_PASIEN} element={<DataPasien/>}/>
+        <Route path={RIWAYAT_PASIEN} element={<RiwayatPasien/>}/>
       </Routes>
     </>
   );

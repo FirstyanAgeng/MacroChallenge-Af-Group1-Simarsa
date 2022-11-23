@@ -1,13 +1,16 @@
 import AdminLayout from "../../components/AdminLayout";
 import { Container, Card, Row, Navbar, Nav, Col, Form, Tabs, Button, Tab} from "react-bootstrap";
 import { AiFillHome, AiOutlineRight } from "react-icons/ai";
-import { ADMIN_DASHBOARD, DATA_POLIKLINIK, DATA_POLI} from "../../router";
+import { ADMIN_DASHBOARD, DATA_POLIKLINIK, DATA_POLI, RIWAYAT_PASIEN} from "../../router";
+import { useNavigate } from "react-router-dom";
+
 
 import "../../styles/admin.css";
 import male from "../../assets/images/male.png";
 
 
 const DataPasien= () => {
+    const navigate = useNavigate();
     return(
     <AdminLayout>
         <div className="dataPasien">
@@ -86,7 +89,7 @@ const DataPasien= () => {
                                         <h6 className="text mt-2 mb-5">dr.Wahyu Mustiadi, Sp.P. M. Kes</h6>
                                     </Col>
                                     <Col className="mt-3 text-center mt-3">
-                                    <button class="btnDataDokter btn btnpad mt-2 sd1" style={{padding:"10px 20px"}}>Sedang diproses</button>
+                                    <button class="btnDataDokter btn btnpad mt-2 sd1" style={{padding:"10px 20px"}} onClick={() => navigate(RIWAYAT_PASIEN)}>Sedang diproses</button>
                                     <h6 className="text">Tanggal: 27 Mei 2022</h6>
                                     </Col>
                                 </Row>
