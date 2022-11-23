@@ -19,8 +19,6 @@ import {
   HUBUNGI,
   ADMIN_DASHBOARD,
   LOGIN,
-  DETAIL_DOKTER,
-  DATA_POLIKLINIK,
   DATA_DOKTER,
 } from "./router";
 
@@ -37,8 +35,6 @@ function App() {
         <Route path={ADMIN_DASHBOARD} element={<AdminHome />} />
         <Route path={LOGIN} element={<Login />} />
         <Route path={DATA_DOKTER} element={<DataDokter />} />
-        <Route path={DETAIL_DOKTER} element={<DetailDokter />} />
-        <Route path={DATA_POLIKLINIK} element={<DataPoliklinik />} />
       </Routes>
     </>
   );
