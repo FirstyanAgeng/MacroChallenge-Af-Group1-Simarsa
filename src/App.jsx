@@ -8,15 +8,10 @@ import Pendaftaran from "./pages/Pendaftaran";
 import AdminHome from "./pages/admin/Dashboard";
 import Login from "./pages/admin/Login";
 import DataDokter from "./pages/admin/DataDokter";
-<<<<<<< HEAD
-import DetailDokter from "./pages/admin/DataDokter";
+import DetailDokter from "./pages/admin/DetailDokter";
 import DataPoliklinik from "./pages/admin/DataPoliklinik";
-=======
-import DetailDokter from "./pages/admin/DetailDokter"
-import DataPoliklinik from "./pages/admin/DataPoliklinik"
-import DataPoli from "./pages/admin/DataPoli"
+import DataPoli from "./pages/admin/DataPoli";
 
->>>>>>> coba1
 import {
   HOME,
   ABOUT,
@@ -29,7 +24,7 @@ import {
   DATA_DOKTER,
   DETAIL_DOKTER,
   DATA_POLIKLINIK,
-  DATA_POLI
+  DATA_POLI,
 } from "./router";
 
 function App() {
@@ -43,11 +38,11 @@ function App() {
         <Route path={DAFTAR} element={<Pendaftaran />} />
         <Route path={HUBUNGI} element={<HubungiKami />} />
         <Route path={ADMIN_DASHBOARD} element={<AdminHome />} />
-        <Route path={LOGIN} element={<Login/>}/>
-        <Route path={DATA_DOKTER} element={<DataDokter/>}/>
-        <Route path={DETAIL_DOKTER} element ={<DetailDokter/>}/>
-        <Route path={DATA_POLIKLINIK} element={<DataPoliklinik/>}/>
-        <Route path={DATA_POLI} element={<DataPoli/>}/>
+        <Route path={LOGIN} element={<Login />} />
+        <Route path={DATA_DOKTER} element={<DataDokter />} />
+        <Route path={DETAIL_DOKTER} element={<DetailDokter />} />
+        <Route path={DATA_POLIKLINIK} element={<DataPoliklinik />} />
+        <Route path={DATA_POLI} element={<DataPoli />} />
       </Routes>
     </>
   );
