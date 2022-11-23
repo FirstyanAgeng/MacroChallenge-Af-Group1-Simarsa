@@ -1,16 +1,18 @@
 import { Container, Card, Row, Col, Button, Nav,Table, ToggleButton, ToggleButtonGroup, Navbar} from "react-bootstrap";
 import AdminLayout from "../../components/AdminLayout";
 import "../../styles/admin.css";
-import { ADMIN_DASHBOARD, DATA_POLIKLINIK} from "../../router";
+import { ADMIN_DASHBOARD, DATA_POLIKLINIK, DATA_PASIEN} from "../../router";
 import { AiFillHome, AiOutlineRight } from "react-icons/ai";
 import {FaSort} from "react-icons/fa";
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-icons/bs";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useNavigate } from "react-router-dom";
+
 
 
 
 const DataPoli = () => {
-
+  const navigate = useNavigate();
     return (
         <AdminLayout>
             <div className="dataPoli">
@@ -63,7 +65,7 @@ const DataPoli = () => {
                         <td>Tengku Mahmudi</td>
                         <td>24/11/2022</td>
                         <td className="ad">
-                            <Button className="sed sed1">Lihat</Button>
+                            <Button className="sed sed1" onClick={() => navigate(DATA_PASIEN)}>Lihat</Button>
                             <Button className="sed sed2" variant="danger">Hapus</Button></td>
                       </tr>
                       
@@ -73,7 +75,7 @@ const DataPoli = () => {
                         <td>Tengku Mahmudi</td>
                         <td>24/11/2022</td>
                         <td className="ad">
-                            <Button className="sed sed1">Lihat</Button>
+                            <Button className="sed sed1" onClick={() => navigate(DATA_PASIEN)}>Lihat</Button>
                             <Button className="sed sed2" variant="danger">Hapus</Button></td>
                       </tr>
 
@@ -83,7 +85,7 @@ const DataPoli = () => {
                         <td>Wahyu Tia</td>
                         <td>24/11/2022</td>
                         <td className="ad">
-                            <Button className="sed sed1">Lihat</Button>
+                            <Button className="sed sed1" onClick={() => navigate(DATA_PASIEN)}>Lihat</Button>
                             <Button className="sed sed2" variant="danger">Hapus</Button></td>
                       </tr>
 
@@ -93,7 +95,7 @@ const DataPoli = () => {
                         <td>Zepi Rara</td>
                         <td>24/11/2022</td>
                         <td className="ad">
-                            <Button className="sed sed1">Lihat</Button>
+                            <Button className="sed sed1" onClick={() => navigate(DATA_PASIEN)}>Lihat</Button>
                             <Button className="sed sed2" variant="danger">Hapus</Button></td>
                       </tr>
 
@@ -103,7 +105,7 @@ const DataPoli = () => {
                         <td>Rian</td>
                         <td>23/11/2022</td>
                         <td className="ad">
-                            <Button className="sed sed1">Lihat</Button>
+                            <Button className="sed sed1" onClick={() => navigate(DATA_PASIEN)}>Lihat</Button>
                             <Button className="sed sed2" variant="danger">Hapus</Button></td>
                       </tr>
 
@@ -113,7 +115,7 @@ const DataPoli = () => {
                         <td>Wahyu</td>
                         <td>23/11/2022</td>
                         <td className="ad">
-                            <Button className="sed sed1">Lihat</Button>
+                            <Button className="sed sed1" onClick={() => navigate(DATA_PASIEN)}>Lihat</Button>
                             <Button className="sed sed2" variant="danger">Hapus</Button></td>
                       </tr>
                       <tr>
@@ -122,7 +124,7 @@ const DataPoli = () => {
                         <td>Mamat</td>
                         <td>23/11/2022</td>
                         <td className="ad">
-                            <Button className="sed sed1">Lihat</Button>
+                            <Button className="sed sed1" onClick={() => navigate(DATA_PASIEN)}>Lihat</Button>
                             <Button className="sed sed2" variant="danger">Hapus</Button></td>
                       </tr>
                       <tr>
@@ -131,7 +133,7 @@ const DataPoli = () => {
                         <td>adi</td>
                         <td>23/11/2022</td>
                         <td className="ad">
-                            <Button className="sed sed1">Lihat</Button>
+                            <Button className="sed sed1" onClick={() => navigate(DATA_PASIEN)}>Lihat</Button>
                             <Button className="sed sed2" variant="danger">Hapus</Button></td>
                       </tr>
                       <tr>
@@ -140,7 +142,7 @@ const DataPoli = () => {
                         <td>Anton</td>
                         <td>23/11/2022</td>
                         <td className="ad">
-                            <Button className="sed sed1">Lihat</Button>
+                            <Button className="sed sed1" onClick={() => navigate(DATA_PASIEN)}>Lihat</Button>
                             <Button className="sed sed2" variant="danger">Hapus</Button></td>
                       </tr>
                     </tbody>

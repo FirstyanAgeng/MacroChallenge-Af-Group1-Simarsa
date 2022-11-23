@@ -11,6 +11,7 @@ import DataDokter from "./pages/admin/DataDokter";
 import DetailDokter from "./pages/admin/DetailDokter";
 import DataPoliklinik from "./pages/admin/DataPoliklinik";
 import DataPoli from "./pages/admin/DataPoli";
+import DataPasien from "./pages/admin/DataPasien";
 
 import {
   HOME,
@@ -25,6 +26,7 @@ import {
   DETAIL_DOKTER,
   DATA_POLIKLINIK,
   DATA_POLI,
+  DATA_PASIEN
 } from "./router";
 
 function App() {
@@ -43,6 +45,7 @@ function App() {
         <Route path={DETAIL_DOKTER} element={<DetailDokter />} />
         <Route path={DATA_POLIKLINIK} element={<DataPoliklinik />} />
         <Route path={DATA_POLI} element={<DataPoli />} />
+        <Route path={DATA_PASIEN} element={<DataPasien/>}/>
       </Routes>
     </>
   );

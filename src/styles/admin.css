@@ -327,3 +327,32 @@
 .ho1{
   margin-top: 13px;
 }
+/* data pasien */
+.containerDataPasien a {
+  text-decoration: none;
+  color: grey;
+}
+.containerDataPasien a:hover{
+  color: black;
+}
+.pageDataPasien{
+  background-color: whitesmoke;
+  height: 100vh;
+}
+.cardDetailPasien{
+  margin: auto;
+  width: 1500px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 1px 3px 3px rgba(124, 124, 124, 0.5);
+}
+.ma{
+  margin-left: 0;
+  width: 300px;
+}
+.sd{
+  width: 170px;
+}
+.sd1{
+  background-color: #C4C3C3;
+}
