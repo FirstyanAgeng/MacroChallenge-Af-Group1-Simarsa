@@ -1,7 +1,10 @@
 import { Row, Col, Form, Container } from "react-bootstrap";
 import Layout from "../components/Layout";
+import { useNavigate } from "react-router-dom";
+import { DAFTAR_BERHASIL } from "../router";
 
 const Pendaftaran = () => {
+  const navigate = useNavigate();
   return (
     <Layout>
       <section className="my-5">
@@ -80,7 +83,7 @@ const Pendaftaran = () => {
                   *Pastikan data sudah terisi dengan benar
                 </Form.Text>
               </Form.Group>
-              <button type="submit" className="tombol-submit">
+              <button type="submit" className="tombol-submit"onClick={() => navigate(DAFTAR_BERHASIL)}>
                 KONFIRMASI
               </button>
             </Col>
