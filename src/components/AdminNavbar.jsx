@@ -17,7 +17,7 @@ const AdminNavbar = () => {
       <Navbar className="navbar-main" variant="dark" expand="lg">
         <Container>
           <NavLink to="/" className="navbar-brand h1Header">
-            SIMARS
+            SIMARSA
           </NavLink>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
