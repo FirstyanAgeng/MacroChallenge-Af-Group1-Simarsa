@@ -115,6 +115,12 @@ p {
   transition: 0.3s ease;
 }
 
+.tombol-kirim {
+  width: 100%;
+  background-color: var(--tertiary-color);
+  color: #1f2b6c;
+}
+
 .tentang {
   color: #1f2b6c;
   font-family: "Yeseva One", cursive;

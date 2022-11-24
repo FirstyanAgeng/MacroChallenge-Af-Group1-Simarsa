@@ -66,7 +66,7 @@ const HubungiKami = () => {
                     <Form.Label>Pesan</Form.Label>
                     <Form.Control as="textarea" rows={3} />
                   </Form.Group>
-                  <Button>Submit</Button>
+                  <Button className="tombol-kirim">SUBMIT</Button>
                 </Form>
               </Col>
               {/* 2 */}
