@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 const TentangKami = () => {
   return (
     <Layout>
-      <div className="tentangKami">
+      <div className="tentangKami mb-5">
         <Card className="bg-light text-dark tentang">
           <Card.Img src={Rs} alt="Card image" />
           <Card.ImgOverlay className="background-filter">
@@ -15,8 +15,8 @@ const TentangKami = () => {
             </Container>
           </Card.ImgOverlay>
         </Card>
-        <Container className="mt-5 mb-5 tentang-content h-80 p-2">
-          <Row>
+        <Container className="my-5 tentang-content h-80 p-2">
+          <Row className="my-5 mx-2">
             <Col xs="5">
               <img src={logoRs} alt="logo" className="logoRs" />
             </Col>

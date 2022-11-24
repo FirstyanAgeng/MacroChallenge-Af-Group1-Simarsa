@@ -1,7 +1,7 @@
 import React from "react";
 import Layanan1 from "../assets/images/layanan1.png";
 import Dok from "../assets/images/dok1.png";
-import { Row, Col, Container, Card,} from "react-bootstrap";
+import { Row, Col, Container, Card } from "react-bootstrap";
 import Layout from "../components/Layout";
 
 const Beranda = () => {
@@ -29,7 +29,7 @@ const Beranda = () => {
         </Container>
       </div>
       <div className="beranda-layanan container my-5 h-50">
-        <h2 className="text-center p-2">Layanan</h2>
+        <h2 className="text-center p-5">Layanan</h2>
         <Container>
           <Row className="container">
             <Col>
@@ -38,7 +38,7 @@ const Beranda = () => {
               <p>USG Skrining Kelainan Kongenital Janin dan Detail Jantung</p>
               <p>USG 4 Dimensi HD Live Studio</p>
               <p>Penanganan Kehamilan Resiko Tinggi</p>
-              <p>
+              <p className="pb-5">
                 <a href="/layanan">Baca Selengkapnya</a>
               </p>
             </Col>
@@ -73,6 +73,9 @@ const Beranda = () => {
                 <Card.Link href="#">Card Link</Card.Link>
               </Card.Body>
             </Card>
+            <a href="/tentang" className="text-center mt-3">
+              Baca Selengkapnya
+            </a>
           </Row>
         </Container>
       </div>

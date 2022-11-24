@@ -15,7 +15,7 @@
 }
 
 .navbar-main {
-  background-color: #0957de;
+  background-color: var(--primary-color);
 }
 
 .beranda {
@@ -125,7 +125,7 @@ p {
   background-color: var(--secondary-color);
 }
 .tentangKami {
-  height: 100vh;
+  height: 130vh;
   margin-bottom: 10rem;
 }
 
@@ -148,8 +148,34 @@ p {
   color: #1f2b6c;
 }
 
+.Layanan {
+  background-color: #a7c6fc;
+}
+
 .kartu-layanan {
   background-color: #ecf5f8;
+}
+
+/* hubungi kami */
+.card-kami {
+  background-color: var(--primary-color);
+  width: 230px;
+  height: 230px;
+}
+
+.card-kami2 {
+  background-color: var(--tertiary-color);
+  width: 230px;
+  height: 230px;
+}
+
+#card {
+  margin-top: 50px;
+}
+
+.logo-layanan {
+  width: 40px;
+  height: 40px;
 }
 
 footer {
@@ -172,7 +198,7 @@ footer p {
 }
 
 .hubungi {
-  height: 200vh;
+  height: 220vh;
 }
 
 /* .navbar-list {
