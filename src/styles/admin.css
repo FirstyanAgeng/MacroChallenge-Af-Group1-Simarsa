@@ -369,6 +369,7 @@
 }
 
 /* daftar berhasil */
+
 .alldb{
     padding: 0;
     margin: 0;
@@ -407,6 +408,27 @@
   transform: translate(-50%, -50%);
   animation: fill 0.5s ease forwards 2.5s;
 }
+#smile path:nth-child(1){
+  stroke-dasharray: 606; /* space */
+  stroke-dashoffset: 606; /* position */
+  animation: line-animation 7s ease forwards;
+}
+@keyframes line-animation {
+  to {
+      stroke-dashoffset: 0;
+  }
+}
+@keyFrames fill {
+  from {
+      fill: transparent;
+      border-radius: 50%;
+  }
+  to {
+      fill: #09C2DE;
+      background-color: white;
+      border-radius: 50%;
+  }
+}
 
 .cek1 {
   margin-top: 250px;
@@ -415,22 +437,39 @@
   cursor:context-menu
 }
 
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* kartu antrian */
 .pageAntrian{
   background-image: url("../assets/images/bgantrian.png");
-  height: 100vh;
+  height: 100%;
   background-size: cover;
   display: flex;
   margin: 0px;
 }
 .cont9{
-    margin: auto;
-    margin-top: 100px;
+    margin-top: 15px;
+    margin-bottom: 80px;
     width: 450px;
 }
 .t9{
   color: #0957DE;
-  font-size: 30px;
+  font-size: 28px;
 }
 .cardAntrian{
   border: none;
@@ -439,15 +478,71 @@
 .cardTA{
     background-color: #70a4fd;
     color: white;
-    font-size: 2em;
     font-weight: bold;
     border-radius: 10px 10px 0 0;
   }
   .content9{
-    padding: 5px;
     border-style: groove;
     border-color: #0957DE;
     border-width: thin;
     border-radius: 5px;
+    margin: 0;
+    margin-top: 0;
   }
+.idl{
+  font-size: 28px;
+  color: black;
+}
+.idl1{
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+.idl2{
+  color: black;
+  font-size: 12px;
+}
+.idl3{
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+.idl4{
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+.content8{
+  border-style: groove;
+  border-color: #0957DE;
+  border-width: thin;
+  border-radius: 5px;
+  width: 180px;
+  margin: 15px 8px 0px 15px;
+  padding: 0;
+}
+.btn9{
+  background-color: #70a4fd;
+  color: white;
+  font-weight: bold;
+  width: 160px;
+}
+.btn9:hover{
+  background-color: white;
+  border-color: #70a4fd;
+  color: #70a4fd;
+  font-weight: bold;
+}
+.btn7{
+  background-color: rgb(0, 202, 202);
+  color: white;
+  font-weight: bold;
+  width: 160px;
+}
+.btn7:hover{
+  background-color: white;
+  border-color: rgb(0, 202, 202);
+  color: rgb(0, 202, 202);
+  font-weight: bold;
+}
 
