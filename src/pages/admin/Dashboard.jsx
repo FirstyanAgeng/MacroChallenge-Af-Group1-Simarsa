@@ -52,7 +52,7 @@ const AdminHome = () => {
             </Col>
 
             <Col>
-              <Card>
+              <Card className="mb-4">
                 <Container>
                   <Row>
                     <Col>
