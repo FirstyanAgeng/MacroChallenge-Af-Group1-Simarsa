@@ -14,6 +14,8 @@ import DataPoli from "./pages/admin/DataPoli";
 import DataPasien from "./pages/admin/DataPasien";
 import RiwayatPasien from "./pages/admin/RiwayatRekamMedis"
 import DaftarPasienBaru from "./pages/admin/daftarPasienBaru"
+import DaftarBerhasil from "./pages/admin/daftarBerhasil"
+import KartuAntrian from "./pages/admin/KartuAntrian";
 
 import {
   HOME,
@@ -30,7 +32,9 @@ import {
   DATA_POLI,
   DATA_PASIEN,
   RIWAYAT_PASIEN,
-  DAFTAR_PASIEN_BARU
+  DAFTAR_PASIEN_BARU,
+  DAFTAR_BERHASIL,
+  KARTU_ANTRIAN
 } from "./router";
 
 function App() {
@@ -52,6 +56,8 @@ function App() {
         <Route path={DATA_PASIEN} element={<DataPasien/>}/>
         <Route path={RIWAYAT_PASIEN} element={<RiwayatPasien/>}/>
         <Route path={DAFTAR_PASIEN_BARU} element={<DaftarPasienBaru/>}/>
+        <Route path={DAFTAR_BERHASIL} element={<DaftarBerhasil/>}/>
+        <Route path={KARTU_ANTRIAN} element={<KartuAntrian/>}/>
       </Routes>
     </>
   );

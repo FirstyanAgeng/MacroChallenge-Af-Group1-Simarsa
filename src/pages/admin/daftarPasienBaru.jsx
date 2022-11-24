@@ -1,12 +1,15 @@
 import AdminLayout from "../../components/AdminLayout";
 import { Row, Col, Form, Container, Nav, Navbar, Card } from "react-bootstrap";
-import { ADMIN_DASHBOARD,  DATA_DOKTER} from "../../router";
+import { ADMIN_DASHBOARD,  DAFTAR_BERHASIL} from "../../router";
 import { AiFillHome, AiOutlineRight } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
+
 
 
 import "../../styles/admin.css";
 
 const DaftarPasienBaru = () => {
+    const navigate = useNavigate();
     return(
         <AdminLayout>
             <div className="daftarPasienBaru">
@@ -128,7 +131,7 @@ const DaftarPasienBaru = () => {
                                 <Form.Control as="textarea" rows={4} placeholder="Keluhan pasien">
                                 </Form.Control>
                                 </Form.Group>
-                                <button type="submit" className="tombol-submit sub">
+                                <button type="submit" className="tombol-submit sub" onClick={() => navigate(DAFTAR_BERHASIL)}>
                                     KONFIRMASI
                                 </button>
                                 </Form>

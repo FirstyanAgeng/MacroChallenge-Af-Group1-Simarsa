@@ -367,3 +367,87 @@
   height: 50px;
   font-weight: bold;
 }
+
+/* daftar berhasil */
+.alldb{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.cont2{
+  margin-top: 100px;
+}
+.cd2{
+  max-height: 1000px;
+  height: 400px;
+  width: 50%;
+  background-color: rgba(213, 224, 254, 0.3);
+  border-color: transparent;
+  margin: auto;
+  border-radius: 10%;
+  color: #0957DE;
+}
+
+.pag {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/images/bgdaftar.png");
+  background-size: cover;
+  display: flex;
+}
+.ct2{
+  margin: auto;
+  font-weight: bold;
+  font-size: 2em;
+}
+#smile {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fill 0.5s ease forwards 2.5s;
+}
+
+.cek1 {
+  margin-top: 250px;
+  color: #0957DE;
+  text-decoration: underline;
+  cursor:context-menu
+}
+
+/* kartu antrian */
+.pageAntrian{
+  background-image: url("../assets/images/bgantrian.png");
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  margin: 0px;
+}
+.cont9{
+    margin: auto;
+    margin-top: 100px;
+    width: 450px;
+}
+.t9{
+  color: #0957DE;
+  font-size: 30px;
+}
+.cardAntrian{
+  border: none;
+  border-radius: 10px;
+}
+.cardTA{
+    background-color: #70a4fd;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+  }
+  .content9{
+    padding: 5px;
+    border-style: groove;
+    border-color: #0957DE;
+    border-width: thin;
+    border-radius: 5px;
+  }
+
