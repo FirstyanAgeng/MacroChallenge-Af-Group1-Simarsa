@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import Layanan1 from "../assets/images/layanan1.png";
 import Dok from "../assets/images/dok1.png";

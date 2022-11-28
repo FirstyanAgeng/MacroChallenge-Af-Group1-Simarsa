@@ -14,21 +14,21 @@ const Pendaftaran = () => {
             <Col>
               <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label>NIK</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" />
+                  <Form.Label className="bold">NIK</Form.Label>
+                  <Form.Control type="email" placeholder="Masukan NIK anda" />
                   <Form.Text className="text-muted">
                     *NIK harus 10 digit
                   </Form.Text>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label>Nama Lengkap</Form.Label>
+                  <Form.Label className="bold">Nama Lengkap</Form.Label>
                   <Form.Control type="email" placeholder="Enter email" />
                   <Form.Text className="text-muted">
                     *Sesuai dengan KTP
                   </Form.Text>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label>No Hp</Form.Label>
+                  <Form.Label className="bold">No Hp</Form.Label>
                   <Form.Control
                     type="email"
                     placeholder="Masukan no.hp anda..."
@@ -36,7 +36,7 @@ const Pendaftaran = () => {
                 </Form.Group>
 
                 <Form.Group className="mb-3">
-                  <Form.Label>Jenis Kelamin</Form.Label>
+                  <Form.Label className="bold">Jenis Kelamin</Form.Label>
                   <Form.Select placeholder="masukan jenis kelamin anda">
                     <option>Pria</option>
                     <option>Wanita</option>
@@ -46,7 +46,7 @@ const Pendaftaran = () => {
             </Col>
             <Col>
               <Form.Group className="mb-3">
-                <Form.Label>Poli</Form.Label>
+                <Form.Label className="bold">Poli</Form.Label>
                 <Form.Select placeholder="Pilih poliklinik yang akan dituju">
                   <option>Poli Umum</option>
                   <option>Poli Gigi</option>
@@ -60,14 +60,14 @@ const Pendaftaran = () => {
                 </Form.Select>
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Jadwal</Form.Label>
+                <Form.Label className="bold">Jadwal</Form.Label>
                 <Form.Control type="email" placeholder="masukan jadwal" />
                 <Form.Text className="text-muted">
                   *Silahkan masukan jadwal
                 </Form.Text>
               </Form.Group>
               <Form.Group className="mb-3">
-                <Form.Label>JAM</Form.Label>
+                <Form.Label className="bold">JAM</Form.Label>
                 <Form.Select placeholder="masukan jenis kelamin anda">
                   <option>Pagi</option>
                   <option>Siang</option>
@@ -77,13 +77,17 @@ const Pendaftaran = () => {
                 className="mb-3"
                 controlId="exampleForm.ControlTextarea1"
               >
-                <Form.Label>Keluhan</Form.Label>
+                <Form.Label className="bold">Keluhan</Form.Label>
                 <Form.Control as="textarea" rows={3} />
                 <Form.Text className="text-muted">
                   *Pastikan data sudah terisi dengan benar
                 </Form.Text>
               </Form.Group>
-              <button type="submit" className="tombol-submit"onClick={() => navigate(DAFTAR_BERHASIL)}>
+              <button
+                type="submit"
+                className="tombol-submit"
+                onClick={() => navigate(DAFTAR_BERHASIL)}
+              >
                 KONFIRMASI
               </button>
             </Col>

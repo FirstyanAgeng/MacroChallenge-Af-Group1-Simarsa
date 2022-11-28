@@ -1,14 +1,5 @@
 import map from "../assets/images/map.png";
-import {
-  Container,
-  Card,
-  Form,
-  Button,
-  Row,
-  Col,
-  Stack,
-  CardGroup,
-} from "react-bootstrap";
+import { Container, Card, Form, Row, Col } from "react-bootstrap";
 import Telp from "../assets/images/logo-telp.png";
 import Map from "../assets/images/logo-map.png";
 import Message from "../assets/images/logo-sms.png";
@@ -35,29 +26,29 @@ const HubungiKami = () => {
           <div className="my-5">
             <Row>
               {/* 1 */}
-              <Col xs="4">
+              <Col xs="5" className="me-5">
                 <h2>Saran</h2>
-                <Form>
+                <Form className="form">
                   <Form.Group
                     className="mb-3"
                     controlId="exampleForm.ControlInput1"
                   >
                     <Form.Label>Nama</Form.Label>
-                    <Form.Control type="email" placeholder="name@example.com" />
+                    <Form.Control type="text" />
                   </Form.Group>
                   <Form.Group
                     className="mb-3"
                     controlId="exampleForm.ControlInput1"
                   >
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="name@example.com" />
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control type="email" />
                   </Form.Group>
                   <Form.Group
                     className="mb-3"
                     controlId="exampleForm.ControlInput1"
                   >
                     <Form.Label>Subjek</Form.Label>
-                    <Form.Control type="email" placeholder="name@example.com" />
+                    <Form.Control type="text" />
                   </Form.Group>
                   <Form.Group
                     className="mb-3"
@@ -66,8 +57,8 @@ const HubungiKami = () => {
                     <Form.Label>Pesan</Form.Label>
                     <Form.Control as="textarea" rows={3} />
                   </Form.Group>
-                  <Button className="tombol-kirim">SUBMIT</Button>
                 </Form>
+                <button class="tombol-kirim">SUBMIT</button>
               </Col>
               {/* 2 */}
               <Col xs="3">
@@ -96,7 +87,7 @@ const HubungiKami = () => {
                 </Card>
               </Col>
               {/* 3 */}
-              <Col xs="5">
+              <Col xs="2">
                 <Card className="card-kami mb-3" id="card">
                   <Card.Body>
                     <img src={Map} alt="" className="logo-layanan mb-2 " />
