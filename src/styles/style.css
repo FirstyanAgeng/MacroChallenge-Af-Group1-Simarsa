@@ -7,17 +7,42 @@
   --tertiary-color: #bfd2f8;
   --txt-primary-color: #159eec;
   --txt-secondary-color: #1f2b6c;
+  --txt-tertiary-color: #fcfefe;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
 .navbar-logo {
-  padding: 15px;
   font-family: "Work Sans", sans-serif;
+  padding: 10px;
 }
 
 .navbar-main {
-  background-color: #0957de;
+  background-color: var(--primary-color);
 }
 
+.tombol-nav {
+  border: none;
+  border-radius: 50px;
+  background-color: #4caf50;
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+  width: 120px;
+}
+
+.tombol-nav:hover {
+  background-color: white;
+  color: #4caf50;
+  transition: 0.3s ease;
+}
+
+/* Beranda */
 .beranda {
   background-image: url(../assets/images/background.jpg);
   background-size: cover;
@@ -35,6 +60,20 @@
   font-family: "Yeseva One", cursive;
   background-color: var(--secondary-color);
   margin-bottom: 30px;
+}
+
+.beranda-layanan {
+  background-color: var(--secondary-color);
+}
+
+.beranda-jadwal {
+  background-color: var(--secondary-color);
+  margin-bottom: 30px;
+}
+
+.pic-layanan {
+  width: "400px";
+  height: "220px";
 }
 
 h1 {
@@ -61,15 +100,6 @@ p {
   font-size: 18px;
 }
 
-.beranda-layanan {
-  background-color: var(--secondary-color);
-}
-
-.beranda-jadwal {
-  background-color: var(--secondary-color);
-  margin-bottom: 30px;
-}
-
 .judul {
   padding-top: 250px;
   color: var(--primary-color);
@@ -80,22 +110,6 @@ p {
 
 .deskripsi {
   font-family: "Work Sans", sans-serif;
-}
-
-.tombol {
-  border: none;
-  border-radius: 50px;
-  background-color: #4caf50;
-  color: white;
-  padding: 5px;
-  font-size: 15px;
-  width: 120px;
-}
-
-.tombol:hover {
-  background-color: white;
-  color: #4caf50;
-  transition: 0.3s ease;
 }
 
 .tombol-submit {
@@ -125,7 +139,7 @@ p {
   background-color: var(--secondary-color);
 }
 .tentangKami {
-  height: 100vh;
+  height: 130vh;
   margin-bottom: 10rem;
 }
 
@@ -148,10 +162,69 @@ p {
   color: #1f2b6c;
 }
 
+.Layanan {
+  background-color: #a7c6fc;
+}
+
 .kartu-layanan {
   background-color: #ecf5f8;
 }
 
+/* hubungi kami */
+.card-kami {
+  background-color: var(--primary-color);
+  width: 230px;
+  height: 230px;
+}
+
+.card-kami p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  color: var(--tertiary-color);
+}
+
+.card-kami2 {
+  background-color: var(--tertiary-color);
+  width: 230px;
+  height: 230px;
+}
+
+.card-kami2 p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  color: var(--txt-secondary-color);
+}
+
+.form {
+  background-color: var(--primary-color);
+  color: var(--txt-tertiary-color);
+  padding: 20px;
+}
+
+.tombol-kirim {
+  width: 100%;
+  padding: 8px;
+  background-color: var(--tertiary-color);
+  color: var(--txt-secondary-color);
+  border: none;
+}
+
+.tombol-kirim:hover {
+  transition: 0.3s ease;
+  background-color: var(--txt-secondary-color);
+  color: var(--tertiary-color);
+}
+
+#card {
+  margin-top: 50px;
+}
+
+.logo-layanan {
+  width: 40px;
+  height: 40px;
+}
+
+/* Footer */
 footer {
   background-color: #0957de;
   color: #fcfefe;
@@ -172,7 +245,7 @@ footer p {
 }
 
 .hubungi {
-  height: 200vh;
+  height: 220vh;
 }
 
 /* .navbar-list {

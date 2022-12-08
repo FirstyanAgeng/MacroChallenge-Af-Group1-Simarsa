@@ -22,6 +22,7 @@ const NavigasiBar = () => {
 
   return (
     <>
+      {/* Header Navbar */}
       <section className="container navbar-logo">
         <Row>
           <Col xs={4}>
@@ -39,6 +40,7 @@ const NavigasiBar = () => {
           </Col>
         </Row>
       </section>
+      {/* Navbar */}
       <Navbar className="navbar-main" variant="dark" expand="lg">
         <Container>
           <NavLink to="/" className="navbar-brand">
@@ -66,7 +68,7 @@ const NavigasiBar = () => {
                 Hubungi Kami
               </NavLink>
             </Nav>
-            <button className="tombol" onClick={() => navigate(LOGIN)}>
+            <button className="tombol-nav" onClick={() => navigate(LOGIN)}>
               LOGIN
             </button>
           </Navbar.Collapse>

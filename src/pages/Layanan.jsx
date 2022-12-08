@@ -10,7 +10,7 @@ import Layout from "../components/Layout";
 
 const Layanan = () => {
   return (
-    <Layout className="Layanan">
+    <Layout>
       <div className="Layanan">
         <Card className="bg-light text-dark">
           <Card.Img src={deskfas} alt="Card image" />
@@ -22,7 +22,7 @@ const Layanan = () => {
         </Card>
         <Container>
           <div className="p-5 layanan-content">
-            <Row className="container mb-5 kartu-layanan">
+            <Row className="container mb-5 kartu-layanan py-5">
               <Col xs="6">
                 <h3>Layanan Unggulan Kandungan</h3>
                 <ul className="list">
@@ -49,7 +49,7 @@ const Layanan = () => {
                 />
               </Col>
             </Row>
-            <Row className="container mb-5 kartu-layanan">
+            <Row className="container mb-5 kartu-layanan py-5">
               <Col xs="6">
                 <h3>Layanan Unggulan Saraf</h3>
                 <ul className="list">
@@ -71,7 +71,7 @@ const Layanan = () => {
                 <img src={Layanan2} width="400px" height="220px" />
               </Col>
             </Row>
-            <Row className="container mb-5 kartu-layanan">
+            <Row className="container mb-5 kartu-layanan py-5">
               <Col xs="6">
                 <h3>Layanan Unggulan Anak</h3>
                 <ul className="list">
@@ -95,7 +95,7 @@ const Layanan = () => {
                 <img src={Layanan3} width="397.94px" height="219.6px" />
               </Col>
             </Row>
-            <Row className="container mb-5 kartu-layanan">
+            <Row className="container mb-5 kartu-layanan py-5">
               <Col xs="6">
                 <h3>Layanan Unggulan Penyakit Dalam</h3>
                 <ul className="list">
@@ -117,7 +117,7 @@ const Layanan = () => {
                 <img src={Layanan4} width="400px" height="220px" />
               </Col>
             </Row>
-            <Row className="container mb-5 kartu-layanan">
+            <Row className="container mb-5 kartu-layanan py-5">
               <Col xs="6">
                 <h3>Layanan Unggulan Paru</h3>
                 <ul className="list">
