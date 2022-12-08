@@ -58,6 +58,7 @@ function App() {
         <Route path={DAFTAR_PASIEN_BARU} element={<DaftarPasienBaru/>}/>
         <Route path={DAFTAR_BERHASIL} element={<DaftarBerhasil/>}/>
         <Route path={KARTU_ANTRIAN} element={<KartuAntrian/>}/>
+        <Route path="*" element={<h1>PAGE NOT FOUND</h1>}/>
       </Routes>
     </>
   );
