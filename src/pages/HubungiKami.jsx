@@ -1,4 +1,3 @@
-import map from "../assets/images/map.png";
 import { Container, Card, Form, Row, Col } from "react-bootstrap";
 import Telp from "../assets/images/logo-telp.png";
 import Map from "../assets/images/logo-map.png";
@@ -21,7 +20,11 @@ const HubungiKami = () => {
         </Card>
         <Container>
           <div className="mt-5 text-center">
-            <img src={map} className="img-fluid" width="100%" alt="" />
+            <iframe
+              title="This is a unique title"
+              style={{ width: "100%", height: "400px" }}
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.326885766876!2d109.2513220147758!3d-7.429031694640239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655e9a29d91be7%3A0x30e5e61e7afd3ed2!2sRumah%20Sakit%20Umum%20Bunda!5e0!3m2!1sid!2sid!4v1671007682338!5m2!1sid!2sid"
+            ></iframe>
           </div>
           <div className="my-5">
             <Row>
@@ -67,7 +70,7 @@ const HubungiKami = () => {
                   <Card.Body>
                     <img src={Telp} alt="" className="logo-layanan mb-2 " />
                     <Card.Title>GAWAT DARURAT</Card.Title>
-                    <Card.Text className="mt-5">
+                    <Card.Text>
                       <p>(237) 681-812-255</p>
                       <p>(237) 666-331-89</p>
                     </Card.Text>

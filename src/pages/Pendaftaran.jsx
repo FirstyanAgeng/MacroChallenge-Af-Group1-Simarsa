@@ -1,7 +1,7 @@
 import { Row, Col, Form, Container } from "react-bootstrap";
-import Layout from "../components/Layout";
-import { useNavigate } from "react-router-dom";
 import { DAFTAR_BERHASIL } from "../router";
+import { useNavigate } from "react-router-dom";
+import Layout from "../components/Layout";
 
 const Pendaftaran = () => {
   const navigate = useNavigate();
