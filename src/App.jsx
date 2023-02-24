@@ -71,7 +71,7 @@ function App() {
         <Route path={LOGIN} element={<Login />} />
         <Route path={DATA_DOKTER} element={<DataDokter />} />
         <Route path={DETAIL_DOKTER} element={<DetailDokter />} />
-        {/* <Route path={EDIT_DETAIL_DOKTER} element={<EditDetailDokter />} /> */}
+
         <Route path={DATA_POLIKLINIK} element={<DataPoliklinik />} />
         <Route path={DATA_POLI} element={<DataPoli />} />
         <Route path={DATA_PASIEN} element={<DataPasien />} />
