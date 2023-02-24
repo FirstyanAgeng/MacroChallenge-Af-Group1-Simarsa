@@ -15,6 +15,8 @@ import {
   LAYANAN,
   HOME,
   HUBUNGI,
+  KARIR,
+  ARTIKEL,
 } from "../router";
 
 const NavigasiBar = () => {
@@ -64,11 +66,20 @@ const NavigasiBar = () => {
               <NavLink className="nav-link" to={DAFTAR}>
                 Pendaftaran Online
               </NavLink>
+              <NavLink className="nav-link" to={KARIR}>
+                Karir
+              </NavLink>
+              <NavLink className="nav-link" to={ARTIKEL}>
+                Artikel
+              </NavLink>
               <NavLink className="nav-link" to={HUBUNGI}>
                 Hubungi Kami
               </NavLink>
             </Nav>
-            <button className="tombol-nav" onClick={() => navigate(LOGIN)}>
+            <button
+              className="tombol-nav fw-bold"
+              onClick={() => navigate(LOGIN)}
+            >
               LOGIN
             </button>
           </Navbar.Collapse>

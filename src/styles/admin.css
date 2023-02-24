@@ -1,3 +1,9 @@
+/* font poppins */
+@font-face {
+  font-family: "poppins";
+  src: url("../../font/Poppins-Medium.ttf");
+}
+
 /* menu login */
 .login {
   background: url(../assets/images/bg2.png);
@@ -10,21 +16,16 @@
   text-align: center;
   color: #0957de;
   font-size: 35px;
-  font-family: url(../../font/Poppins-Bold.ttf);
+  font-family: poppins;
   padding-bottom: 10px;
 }
 
 /* admin-nav */
-.nav-logout:hover {
-  color: #0957de;
-  transition: 0.3s ease;
-  cursor: pointer;
-}
-
 .h1Header {
   color: white;
   font-weight: bold;
   font-size: 1.5em;
+  margin-left: 20px;
 }
 .hsatu {
   display: inline;
@@ -33,18 +34,30 @@
   padding-right: 20px;
 }
 
+.nav-logout {
+  color: white;
+}
+
+.nav-logout:hover {
+  cursor: pointer;
+  color: #09c2de;
+  transition: 0.3s ease;
+}
+
 /* admin home */
 .head {
   width: 1300px;
 }
 
 .titleHome {
-  font-size: 2.3vw;
+  font-size: 2.2vw;
   font-weight: 500;
   color: #0957de;
   text-shadow: 1px 3px 3px rgba(124, 124, 124, 0.5);
-  margin: 10px;
+  margin-top: 10px;
+  margin-left: 22px;
   width: 650px;
+  font-family: poppins;
 }
 
 .date {
@@ -54,18 +67,26 @@
   font-weight: 500;
   margin-right: 10px;
   text-align: right;
+  font-family: poppins;
 }
 
 .cont {
-  width: 1000px;
-  margin-top: 30px;
+  width: 1100px;
+  margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 50px;
 }
 
+.pendaftaran {
+  padding: 10px 40px;
+}
+
 .card-title {
   font-weight: bold;
-  font-size: 1.5vw;
+  font-size: 2vw;
+  font-family: poppins;
+  color: black;
+  margin-bottom: 20px;
 }
 .card-text {
   font-weight: bold;
@@ -74,7 +95,7 @@
 .btnHome {
   background-color: #0957de;
   margin: auto;
-  width: 70%;
+  width: 100%;
   height: auto;
   font-size: 1.2vw;
   font-weight: bold;
@@ -85,11 +106,16 @@
   background-color: white;
   color: #0957de;
 }
+
+.text-btn {
+  font-size: 20px;
+}
+
 .btn1 {
   background-color: rgb(0, 202, 202);
   border-color: rgb(0, 202, 202);
   margin: auto;
-  width: 70%;
+  width: 100%;
   height: auto;
   font-size: 1.2vw;
   font-weight: bold;
@@ -102,6 +128,24 @@
   color: rgb(0, 202, 202);
 }
 
+.datapol-dok {
+  margin-left: 30px;
+}
+
+.data-poliklinik {
+  height: 260px;
+  padding: 10px;
+}
+
+.datapol-dok {
+  margin-left: 30px;
+}
+
+.data-poliklinik {
+  height: 260px;
+  padding: 10px;
+}
+
 .pageHome {
   background-color: whitesmoke;
   height: auto;
@@ -110,9 +154,23 @@
   max-height: 500px;
 }
 
+.card-datapoli {
+  padding: auto;
+}
+
 .center {
   padding-top: 60px;
   text-align: center;
+}
+
+.font-datapoli {
+  font-family: poppins;
+  font-size: 23px;
+}
+
+.font-datapoli {
+  font-family: poppins;
+  font-size: 23px;
 }
 
 .nv {
@@ -127,21 +185,20 @@
 .btnDataDokter {
   background-color: #0957de;
   border-radius: 5px;
+  border: none;
   color: white;
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 10px;
+  width: 200px;
+  height: 54px;
 }
 .btnDataDokter:hover {
   background-color: white;
   color: #0957de;
-  border-color: #0957de;
+  border: #4186eb;
 }
 
-.btn2 {
-  background-color: rgb(165, 165, 165);
-  float: right;
-}
 .btn2:hover {
   background-color: white;
   border-color: rgb(165, 165, 165);
@@ -156,12 +213,31 @@
   padding: 5px 30px;
 }
 
+.container-dataDokter {
+  width: 1000px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.container-dataDokter {
+  width: 1000px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
 .cardDataDokter {
   margin: auto;
+  padding-top: 20px;
   width: 1500px;
   border: none;
   border-radius: 15px;
   box-shadow: 1px 3px 3px rgba(124, 124, 124, 0.5);
+}
+
+.tambah {
+  margin: 0 4px 2px 0;
 }
 .content {
   margin: auto;
@@ -192,7 +268,8 @@
 
 /* detail dokter */
 .pageJadwalPraktik {
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
+  width: 1050px;
 }
 
 .containerJadwalPraktik a {
@@ -204,36 +281,70 @@
 }
 .cardJadwalPraktik {
   margin: auto;
+  margin-bottom: 50px;
   width: 1500px;
   border: none;
   border-radius: 15px;
   box-shadow: 1px 3px 3px rgba(124, 124, 124, 0.5);
 }
+
 .cardf {
-  width: 300px;
-  margin: 50px auto;
+  width: 200px;
+  margin: 50px auto 0 auto;
 }
-.uk {
-  margin: 50px;
-  width: 300px;
+
+.title-Detaildokter {
+  margin: 10px 0 48px 50px;
 }
-.hw {
+
+.title-Detailpasien {
+  margin: 10px 0 10px 20px;
+}
+
+.card-fotoDokter {
+  margin: 0 0 30px 48px;
+  width: 330px;
+  height: 550px;
+}
+
+.nama-dokter {
   color: #0957de;
+  font-size: 20px;
+  font-family: poppins;
+  margin: 10px 30px;
 }
-.hw1 {
+.jadwal-dokter {
+  font-size: 20px;
   color: #9b9b9b;
 }
-.hw2 {
+.telp-dokter {
+  font-size: 20px;
   color: #c4c3c3;
 }
 .category {
   background-color: #09c2de;
   color: white;
-  width: 50%;
+  width: 40%;
   margin: auto;
   border-radius: 20px 20px 20px 20px;
   padding: 7px;
+  font-size: 20px;
 }
+
+.shield-detaildokter {
+  margin-bottom: 2px;
+  margin-right: 5px;
+}
+
+.edit {
+  margin: 0 5px 5px 0;
+  color: white;
+}
+.edit:hover {
+  margin: 0 5px 5px 0;
+  color: #0957de;
+}
+
 .km,
 .km2 {
   font-size: 20px;
@@ -244,6 +355,7 @@
   margin: 0;
   padding: 10px 0;
 }
+
 .c1 {
   font-size: x-large;
   margin-left: 60px;
@@ -251,14 +363,30 @@
 .tab1 {
   margin: 0 10px;
 }
-.tabq {
+
+.container-tab-data-dokter {
   color: black;
+  margin: 10px 0 30px 20px;
 }
+
 .km2 {
   background-color: #0957de;
 }
+.km2:hover {
+  background-color: white;
+  color: #0957de;
+  border-color: #0957de;
+}
+.btn-dataDokter {
+  text-decoration: none;
+  color: white;
+}
 
 /* data poliklinik */
+
+.list-data-antrian {
+  font-size: 8px;
+}
 .card2 {
   margin: auto;
   padding: 10px 20px;
@@ -297,12 +425,28 @@
 .sed1 {
   background-color: #0957de;
   font-weight: bold;
-  padding: 2px 30px;
+  border-radius: 5px;
+  padding: 2px 20px;
+  margin-right: 10px;
+}
+.sed1:hover {
+  background-color: white;
+  color: #0957de;
+  font-weight: bold;
+  padding: 2px 20px;
 }
 .sed2 {
   background-color: #ff795c;
   font-weight: bold;
-  padding: 2px 30px;
+  padding: 2px 15px;
+  border-radius: 5px;
+  margin-left: 0;
+}
+.sed2:hover {
+  background-color: white;
+  color: #ff795c;
+  font-weight: bold;
+  padding: 2px 15px;
 }
 .ad {
   display: flex;
@@ -324,6 +468,33 @@
 .kir {
   color: #c4c3c3;
 }
+
+.container-nav-home {
+  width: 87%;
+  margin: auto;
+  margin-left: 88px;
+  margin-top: 10px;
+}
+
+.title-dataDokter {
+  margin-left: 35px;
+  font-size: 23px;
+}
+.button-tambahDokter {
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  margin-right: 35px;
+  background-color: rgb(195, 195, 195);
+  float: right;
+}
+.button-tambahDokter:hover {
+  background-color: white;
+  color: #0957de;
+}
+
 .ho {
   margin-top: 7px;
   color: #c4c3c3;
@@ -331,6 +502,7 @@
 .ho1 {
   margin-top: 13px;
 }
+
 /* data pasien */
 .containerDataPasien a {
   text-decoration: none;
@@ -350,10 +522,11 @@
   border-radius: 15px;
   box-shadow: 1px 3px 3px rgba(124, 124, 124, 0.5);
 }
-.ma {
-  margin-left: 0;
-  width: 300px;
+.imgPasien {
+  margin: 40px 0 0 40px;
+  width: 240px;
 }
+
 .sd {
   width: 170px;
 }
@@ -374,11 +547,6 @@
 
 /* daftar berhasil */
 
-.alldb {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 .cont2 {
   margin-top: 100px;
 }
@@ -386,11 +554,11 @@
   max-height: 1000px;
   height: 400px;
   width: 50%;
-  background-color: rgba(213, 224, 254, 0.3);
   border-color: transparent;
   margin: auto;
   border-radius: 10%;
   color: #0957de;
+  background: rgba(213, 224, 254, 0.3);
 }
 
 .pag {
@@ -438,7 +606,12 @@
   margin-top: 250px;
   color: #0957de;
   text-decoration: underline;
-  cursor: context-menu;
+}
+
+.cek1 {
+  color: #41e2eb;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .fade-in {
@@ -459,11 +632,13 @@
 }
 
 /* kartu antrian */
+
 .pageAntrian {
   background-image: url("../assets/images/bgantrian.png");
   height: 100%;
   background-size: cover;
   display: flex;
+  justify-content: center;
   margin: 0px;
 }
 .cont9 {
@@ -484,6 +659,8 @@
   color: white;
   font-weight: bold;
   border-radius: 10px 10px 0 0;
+  text-align: center;
+  padding: 20px;
 }
 .content9 {
   border-style: groove;
@@ -492,6 +669,7 @@
   border-radius: 5px;
   margin: 0;
   margin-top: 0;
+  text-align: center;
 }
 .idl {
   font-size: 28px;
@@ -500,11 +678,11 @@
 .idl1 {
   color: black;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
 }
 .idl2 {
   color: black;
-  font-size: 12px;
+  font-size: 15px;
 }
 .idl3 {
   color: black;
@@ -514,36 +692,43 @@
 .idl4 {
   color: black;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 18px;
 }
 .content8 {
   border-style: groove;
   border-color: #0957de;
   border-width: thin;
   border-radius: 5px;
-  width: 180px;
+  width: 100%;
   margin: 15px 8px 0px 15px;
   padding: 0;
+  text-align: center;
 }
-.btn9 {
+.btn-home {
   background-color: #70a4fd;
   color: white;
   font-weight: bold;
+  border: none;
   width: 160px;
+  height: 37px;
+  border-radius: 5px;
 }
-.btn9:hover {
+.btn-home:hover {
   background-color: white;
   border-color: #70a4fd;
   color: #70a4fd;
   font-weight: bold;
 }
-.btn7 {
+.btn-print {
   background-color: rgb(0, 202, 202);
   color: white;
   font-weight: bold;
   width: 160px;
+  border: none;
+  border-radius: 5px;
+  height: 37px;
 }
-.btn7:hover {
+.btn-print:hover {
   background-color: white;
   border-color: rgb(0, 202, 202);
   color: rgb(0, 202, 202);

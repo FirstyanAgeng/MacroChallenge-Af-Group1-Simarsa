@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { HOME } from "../router";
 import "../pages/Beranda";
-import { hover } from "@testing-library/user-event/dist/hover";
 
 const AdminNavbar = () => {
   const navigate = useNavigate();
